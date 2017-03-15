@@ -1,6 +1,13 @@
 /// @description player move state
 
-var is_midair = !place_meeting(x, y + 1, obj_surface);
+var will_not_be_on_surface = !place_meeting(x, y + 1, obj_surface);
+//var will_not_be_on_platform = !place_meeting(x, y + 1, obj_platform);
+var will_not_be_on_platform = !collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, true);
+
+var was_within_platform = place_meeting(xprevious, yprevious + 1, obj_platform) || (vspd < 0);
+var will_not_intersect = !collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, true) && (vspd > 0);
+
+
 
 var status = "";
 
@@ -27,7 +34,7 @@ else {
 }
 
 // vertical movement
-if (is_midair) {
+if (will_not_be_on_surface && will_not_be_on_platform) {
   vspd += grav;
     
   if (vspd > 0) {
@@ -59,6 +66,10 @@ else {
 }
 
 smooth_collide_surface(obj_surface);
+smooth_collide_platform(obj_platform);
+
+x += hspd;
+y += vspd;
 
 // draw sprite depending on player's current status
 switch(status) {

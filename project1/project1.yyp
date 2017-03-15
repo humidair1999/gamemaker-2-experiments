@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "377e661b-bdc0-421f-9d7d-978ada3a5bc5",
+            "Value": {
+                "id": "1301a220-385a-481d-9a5d-a41257f6e3fd",
+                "resourcePath": "sprites\\spr_platform\\spr_platform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38493fce-806f-46f3-a36b-2104a59d2480",
             "Value": {
                 "id": "9f2bc7f2-d99b-4382-861d-436231989486",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "750619fd-023e-484e-a0d1-f769e368f61f",
+            "Value": {
+                "id": "1a293d22-a8b9-4f16-9e5e-7e3c734d8725",
+                "resourcePath": "scripts\\smooth_collide_surface\\smooth_collide_surface.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "754eb644-b694-48c2-8df6-b9898bf4f161",
             "Value": {
                 "id": "f400c825-0c96-4cbb-812f-d9fc4a885e79",
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "a7cc496d-2e6c-4de0-a753-4779eb19b188",
+            "Value": {
+                "id": "b25dad78-2779-4fd6-b4c8-ad3302e06039",
+                "resourcePath": "scripts\\smooth_collide_platform\\smooth_collide_platform.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "cb5189c6-273e-4190-b8e0-adcf155a9076",
@@ -276,14 +300,6 @@
                 "id": "82d24a70-3f93-4239-831e-fd59a9c00896",
                 "resourcePath": "views\\b9163fc8-5b85-40ef-b0e6-d7f7152fe28e.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "c4a0a886-699f-40c3-b6fd-b9a22fecf4a4",
-            "Value": {
-                "id": "8c9e9242-b172-4905-9123-23af1e038946",
-                "resourcePath": "scripts\\smooth_collide_surface\\smooth_collide_surface.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -324,6 +340,14 @@
                 "id": "0efa9c90-5994-4eef-9151-b3de42f74062",
                 "resourcePath": "views\\d7969b68-7728-4670-a8d1-814c70395ec2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dd350f10-43ba-4b85-b8d1-f85304672b73",
+            "Value": {
+                "id": "c0b8dfe6-96ec-4226-b6aa-cec18a7782f2",
+                "resourcePath": "objects\\obj_platform\\obj_platform.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -377,7 +401,8 @@
     ],
     "script_order": [
         "f12b8f14-9c76-43f2-bbca-09d3e9fe839e",
-        "c4a0a886-699f-40c3-b6fd-b9a22fecf4a4",
+        "750619fd-023e-484e-a0d1-f769e368f61f",
+        "a7cc496d-2e6c-4de0-a753-4779eb19b188",
         "4c9b6681-5c40-46ec-abfe-f57096c35386",
         "7a3595a9-3f29-4d41-abdd-942c0e0afa22",
         "c9064236-4f6a-4a17-a223-fac6c2f31c18"

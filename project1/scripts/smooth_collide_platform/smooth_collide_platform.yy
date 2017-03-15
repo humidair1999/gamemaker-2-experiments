@@ -1,8 +1,8 @@
 {
-    "id": "750619fd-023e-484e-a0d1-f769e368f61f",
+    "id": "a7cc496d-2e6c-4de0-a753-4779eb19b188",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "smooth_collide_surface",
+    "name": "smooth_collide_platform",
     "IsCompatibility": false,
     "IsDnD": false
 }

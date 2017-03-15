@@ -16,7 +16,7 @@ if (place_meeting(x + hspd, y, collision_obj)) {
     hspd = 0;
 }
 
-x += hspd;
+
 
 if (place_meeting(x, y + vspd, collision_obj)) {
     while (!place_meeting(x, y + sign(vspd), collision_obj)) {
@@ -26,4 +26,4 @@ if (place_meeting(x, y + vspd, collision_obj)) {
     vspd = 0;
 }
 
-y += vspd;
+

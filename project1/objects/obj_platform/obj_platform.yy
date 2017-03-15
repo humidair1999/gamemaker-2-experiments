@@ -1,13 +1,13 @@
 {
-    "id": "410b81ac-9f15-44e5-a8c8-53d230ffa03b",
+    "id": "dd350f10-43ba-4b85-b8d1-f85304672b73",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_grass",
+    "name": "obj_platform",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "dd350f10-43ba-4b85-b8d1-f85304672b73",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "38493fce-806f-46f3-a36b-2104a59d2480",
+    "spriteId": "377e661b-bdc0-421f-9d7d-978ada3a5bc5",
     "visible": true
 }
