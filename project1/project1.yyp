@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "c4a0a886-699f-40c3-b6fd-b9a22fecf4a4",
+            "Value": {
+                "id": "8c9e9242-b172-4905-9123-23af1e038946",
+                "resourcePath": "scripts\\smooth_collide_surface\\smooth_collide_surface.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c61757e2-034b-44e2-b389-96d10480a1d8",
             "Value": {
                 "id": "f02c063a-55e5-4009-aed5-a2e4f7d1cf23",
@@ -369,6 +377,7 @@
     ],
     "script_order": [
         "f12b8f14-9c76-43f2-bbca-09d3e9fe839e",
+        "c4a0a886-699f-40c3-b6fd-b9a22fecf4a4",
         "4c9b6681-5c40-46ec-abfe-f57096c35386",
         "7a3595a9-3f29-4d41-abdd-942c0e0afa22",
         "c9064236-4f6a-4a17-a223-fac6c2f31c18"
