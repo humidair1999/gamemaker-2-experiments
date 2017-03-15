@@ -1,0 +1,1 @@
+/// @description player idle state
