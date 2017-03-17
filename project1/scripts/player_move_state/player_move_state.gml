@@ -13,10 +13,6 @@ var status = "";
 
 // horizontal movement
 if (right || left) {
-	if (ply_status != "jumping") {
-		status = "running";
-	}
-	
 	// TODO: could probably turn this into an apply_ground_acceleration
 	// script
   hspd += (right - left) * acc;
@@ -43,20 +39,45 @@ else {
 
 
 
+
 vspd += grav;
 
-if (up && ply_status == "grounded") {
+if (up) {
 	vspd = -20;
 	
-	status = "jumping";
+	//status = "jumping";
 	
-	ply_status = "jumping";
+	//ply_status = "jumping";
 }
 
 if (vspd > 0) {
-	ply_status = "jumping";
+	//ply_status = "jumping";
 	
-	status = "falling";
+	//status = "falling";
+	
+	// Collision Bottom
+	var found_platform = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vspd, obj_platform, false, true);
+	
+	if (found_platform != noone) {
+		platform_below = true;
+	
+		while (!collision_rectangle(bbox_left, bbox_bottom + sign(vspd), bbox_right, bbox_bottom + sign(vspd), found_platform, false, true)) {
+			y += sign(vspd);
+			
+			in_loop = true;
+			
+			if (y == yprevious) {
+				//break;
+			}
+		}
+		
+		in_loop = false;
+
+		vspd = 0;
+	}
+	else {
+		platform_below = false;
+	}
 }
 
 
@@ -99,7 +120,7 @@ if (vspd < 0) {
 //}
 
 smooth_collide_surface(obj_surface);
-smooth_collide_platform(obj_platform);
+//smooth_collide_platform(obj_platform);
 
 x += hspd;
 y += vspd;

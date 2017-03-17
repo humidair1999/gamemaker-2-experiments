@@ -12,4 +12,7 @@ ply_status = "grounded";
 platform = "";
 should_land = false;
 
+platform_below = false;
+in_loop = false;
+
 state = player_move_state;

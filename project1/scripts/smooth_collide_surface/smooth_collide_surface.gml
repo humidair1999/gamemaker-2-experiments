@@ -24,10 +24,6 @@ if (place_meeting(x, y + vspd, collision_obj)) {
     }
 
     vspd = 0;
-		
-		ply_status = "grounded";
-		
-		status = "idle";
 }
 
 

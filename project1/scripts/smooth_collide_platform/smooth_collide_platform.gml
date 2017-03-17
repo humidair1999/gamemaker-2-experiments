@@ -17,10 +17,6 @@ if (vspd > 0) {
 					}
 					
 					vspd = 0;
-					
-					ply_status = "grounded";
-					
-					status = "idle";
 				}
 			}
 		//}
