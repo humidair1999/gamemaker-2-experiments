@@ -8,4 +8,7 @@ vspd = 0;
 
 status = "idle";
 
+platform = "";
+should_land = false;
+
 state = player_move_state;
