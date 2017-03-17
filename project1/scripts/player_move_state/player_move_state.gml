@@ -1,8 +1,9 @@
 /// @description player move state
 
 var will_not_be_on_surface = !place_meeting(x, y + 1, obj_surface);
-var will_not_be_on_platform = !collision_rectangle(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, true);
-//var will_not_be_on_platform = !collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, false);
+//var will_not_be_on_surface = !collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_surface, false, true)
+//var will_not_be_on_platform = !collision_rectangle(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, true);
+var will_not_be_on_platform = !collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, true);
 
 //var was_within_platform = place_meeting(xprevious, yprevious + 1, obj_platform) || (vspd < 0);
 //var will_not_intersect = !collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, true) && (vspd > 0);
@@ -79,48 +80,17 @@ else {
 
 
 
-
-
-
-
-
-// vertical movement
-// gravity applies:
-// if you're not on a surface AND not on OR inside a platform
-if (vspd < 0) {
-	
-	// player has pressed (and released) the up key and
-  // is still traveling up; "dampening" the jump mid-air
-  if (up_released && vspd < -8) {
-    vspd = -8;
-  }
-}
-
-
-	
-	
-
-	
-//else {
-	//if (up) {
-    //vspd = -20;
-  //}
-	//else {
-		//vspd = 0;
-		
-		//status = "idle";
-		
-		//if (hspd != 0) {
-			//status = "running";
-		//}
-	//}
-//}
-
 smooth_collide_surface(obj_surface);
 smooth_collide_platform(obj_platform);
 
 x += hspd;
 y += vspd;
+
+var bbox_width = (bbox_right + 1) - bbox_left;
+var bbox_height = (bbox_bottom + 1) - bbox_top;
+
+x = clamp(x, bbox_width, room_width - bbox_width);
+y = clamp(y, bbox_height, room_height - 1);
 
 // draw sprite depending on player's current status
 switch(status) {

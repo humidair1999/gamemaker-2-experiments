@@ -10,9 +10,9 @@ if (vspd > 0) {
 	platform = found_platform;
 	
 	if ((found_platform != noone) && (bbox_bottom <= found_platform.bbox_top)) {
-		while (!collision_rectangle(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, found_platform, false, true)) {
-			y += 1;
-		}
+		while (!place_meeting(x, y + sign(vspd), found_platform)) {
+        y += sign(vspd);
+    }
 		
 		//y = found_platform.bbox_top;
 		
