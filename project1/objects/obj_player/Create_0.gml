@@ -7,6 +7,7 @@ hspd = 0;
 vspd = 0;
 
 status = "idle";
+ply_status = "grounded";
 
 platform = "";
 should_land = false;

@@ -13,6 +13,10 @@ var status = "";
 
 // horizontal movement
 if (right || left) {
+	if (ply_status != "jumping") {
+		status = "running";
+	}
+	
 	// TODO: could probably turn this into an apply_ground_acceleration
 	// script
   hspd += (right - left) * acc;
@@ -33,41 +37,66 @@ else {
 	apply_ground_friction(acc);
 }
 
+
+
+
+
+
+
+vspd += grav;
+
+if (up && ply_status == "grounded") {
+	vspd = -20;
+	
+	status = "jumping";
+	
+	ply_status = "jumping";
+}
+
+if (vspd > 0) {
+	ply_status = "jumping";
+	
+	status = "falling";
+}
+
+
+
+
+
+
+
+
 // vertical movement
 // gravity applies:
 // if you're not on a surface AND not on OR inside a platform
-if ((will_not_be_on_surface && (will_not_be_on_platform || place_meeting(x, y - 1, obj_platform)))) {
-  vspd += grav;
-    
-  if (vspd > 0) {
-    status = "falling";
-		
-		//smooth_collide_platform(obj_platform);
-  }
-  else {
-    status = "jumping";
-  }
-    
-  // player has pressed (and released) the up key and
+if (vspd < 0) {
+	
+	// player has pressed (and released) the up key and
   // is still traveling up; "dampening" the jump mid-air
   if (up_released && vspd < -8) {
     vspd = -8;
   }
 }
-else {
-	if (up) {
-    vspd = -20;
-  }
-	else {
-		vspd = 0;
+
+
+	
+	
+
+	
+//else {
+	//if (up) {
+    //vspd = -20;
+  //}
+	//else {
+		//vspd = 0;
 		
-		status = "idle";
+		//status = "idle";
 		
-		if (hspd != 0) {
-			status = "running";
-		}
-	}
-}
+		//if (hspd != 0) {
+			//status = "running";
+		//}
+	//}
+//}
 
 smooth_collide_surface(obj_surface);
 smooth_collide_platform(obj_platform);
