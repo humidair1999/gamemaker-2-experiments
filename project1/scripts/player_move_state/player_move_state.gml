@@ -1,7 +1,7 @@
 /// @description player move state
 
 var will_not_be_on_surface = !place_meeting(x, y + 1, obj_surface);
-var will_not_be_on_platform = !place_meeting(x, y + 1, obj_platform);
+var will_not_be_on_platform = !collision_rectangle(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, true);
 //var will_not_be_on_platform = !collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_platform, false, false);
 
 //var was_within_platform = place_meeting(xprevious, yprevious + 1, obj_platform) || (vspd < 0);
@@ -33,51 +33,48 @@ else {
 	apply_ground_friction(acc);
 }
 
-
-
-
-
-
-
-
-vspd += grav;
-
-if (up) {
-	vspd = -20;
-	
-	//status = "jumping";
-	
-	//ply_status = "jumping";
+if (will_not_be_on_surface && will_not_be_on_platform) {
+    vspd += grav;
+    
+    //sprite_index = spr_player_jump;
+    //image_speed = 0;
+    
+    if (vspd > 0) {
+        //image_index = 1;
+				
+				status = "falling";
+    }
+    else {
+        //image_index = 0;
+				
+				status = "jumping";
+    }
+    
+    // player has pressed (and released) the up key and
+    // is still traveling up; "dampening" the jump mid-air
+    if (up_released && vspd < -8) {
+        vspd = -8;
+    }
 }
+else {
+    if (hspd == 0) {
+        //sprite_index = spr_player_idle;
+				status = "idle";
+    }
+    else {
+        //sprite_index = spr_player_walk;
+        //image_speed = 0.6;
+				status = "running";
+    }
 
-if (vspd > 0) {
-	//ply_status = "jumping";
-	
-	//status = "falling";
-	
-	// Collision Bottom
-	var found_platform = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vspd, obj_platform, false, true);
-	
-	if (found_platform != noone) {
-		platform_below = true;
-	
-		while (!collision_rectangle(bbox_left, bbox_bottom + sign(vspd), bbox_right, bbox_bottom + sign(vspd), found_platform, false, true)) {
-			y += sign(vspd);
-			
-			in_loop = true;
-			
-			if (y == yprevious) {
-				//break;
-			}
-		}
-		
-		in_loop = false;
-
-		vspd = 0;
-	}
-	else {
-		platform_below = false;
-	}
+    if (up) {
+        vspd = -20;
+        
+        //audio_play_sound(snd_jump, 5, false);
+    }
+    else {
+        vspd = 0;
+    }
 }
 
 
@@ -120,7 +117,7 @@ if (vspd < 0) {
 //}
 
 smooth_collide_surface(obj_surface);
-//smooth_collide_platform(obj_platform);
+smooth_collide_platform(obj_platform);
 
 x += hspd;
 y += vspd;
