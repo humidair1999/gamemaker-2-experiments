@@ -1,12 +1,15 @@
 // Draw sprite depending on player state
+
+var isDebugging = false;
+
 /*
 if (!attacking) {
 */
     switch (state) {
         case IDLE:
-						/*
-            image_speed = 0.2;
+            image_speed = 1;
             
+						/*
             if (blocking)
                 sprite_index = sPlayerIdleShield;
             else
@@ -15,14 +18,14 @@ if (!attacking) {
         break;
         
         case RUN: 
-						/*
-            image_speed = 0.33; 
+            image_speed = 1; 
             
+						/*
             if (blocking)
                 sprite_index = sPlayerRunShield;
             else
-                sprite_index = sPlayerRun;
 						*/
+                sprite_index = sPlayerRun;
         break;
         
         case JUMP:
@@ -33,19 +36,30 @@ if (!attacking) {
                     sprite_index = sPlayerJumpMShield;
                 else
                     sprite_index = sPlayerJumpM;  
-           } else { 
+           } else {
+					 */
                 // Rise + fall
                 if (vy <= 0) {
+										/*
                     if (blocking)
                         sprite_index = sPlayerJumpUShield;
-                    else  
-                        sprite_index = sPlayerJumpU;  
+                    else
+										*/
+                        sprite_index = sPlayerRun;
+												
+												image_speed = 0;
+												image_index = 3;
                 } else {
+										/*
                     if (blocking)
                         sprite_index = sPlayerJumpDShield;
                     else
-                        sprite_index = sPlayerJumpD;
+										*/
+                        sprite_index = sPlayerRun;
+												image_speed = 0;
+												image_index = 6;
                 }
+						/*
             }
 						*/
              
@@ -74,13 +88,15 @@ if (onGround)
     draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);    
 else
     draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);
-		
-draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 
-with(oBlock) {
-  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-}
+if (isDebugging) {
+	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 
-with(oJumpThru) {
-  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+	with(oBlock) {
+	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+	}
+
+	with(oJumpThru) {
+	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+	}
 }
