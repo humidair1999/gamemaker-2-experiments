@@ -135,10 +135,26 @@
             }
         },
         {
+            "Key": "6b28b5ab-c9be-4dd8-9362-25d166e341f2",
+            "Value": {
+                "id": "2749029b-dd5c-4a72-9bc3-b852adb4d4f1",
+                "resourcePath": "scripts\\Approach\\Approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6cf45aa0-1168-4b78-a010-dbe1d2c60f0e",
             "Value": {
                 "id": "f0200d7d-ef07-400f-b680-11e7fc935181",
                 "resourcePath": "objects\\oParSolid\\oParSolid.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7489c636-da1a-43b0-9459-c991ae12925a",
+            "Value": {
+                "id": "2d90c542-cbe4-4c26-90a2-0777c651a31b",
+                "resourcePath": "objects\\oJumpThru\\oJumpThru.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -239,6 +255,14 @@
             }
         },
         {
+            "Key": "c03e8b65-6cd0-4c18-a048-5ac0972b47e3",
+            "Value": {
+                "id": "6dac4027-324f-4f8c-9c9b-4d55ed5a7e74",
+                "resourcePath": "sprites\\sJumpThru16\\sJumpThru16.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c17f241b-1039-4c0e-ace0-b38d2d52884e",
             "Value": {
                 "id": "3e1534d2-2c0d-4cb6-b7c1-df25745d5171",
@@ -322,7 +346,8 @@
     "script_order": [
         "a744dda5-0bee-4ff5-b22f-ccfd50425330",
         "bf7b8699-603d-451d-8433-2fec713fbcfe",
-        "cc672987-f233-45f4-8758-671bb314ee95"
+        "cc672987-f233-45f4-8758-671bb314ee95",
+        "6b28b5ab-c9be-4dd8-9362-25d166e341f2"
     ],
     "tutorial": ""
 }
