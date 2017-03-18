@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "02d158f1-7383-4b2e-8da9-21079ff14ee2",
+            "Value": {
+                "id": "fbea8ee2-3648-4e60-90b5-98ca947eeeab",
+                "resourcePath": "scripts\\EntityStep\\EntityStep.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1549ba8e-27d3-48ab-bfcc-fc903842c7e3",
             "Value": {
                 "id": "2bc256ec-c854-4039-b553-c7d3b1fbd550",
                 "resourcePath": "views\\1549ba8e-27d3-48ab-bfcc-fc903842c7e3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1ae43ad9-0ce4-40e7-8728-8b9cf211cde7",
+            "Value": {
+                "id": "e3dfa135-52e7-4578-af58-344e7d4533fc",
+                "resourcePath": "objects\\oParSolid\\oParSolid.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -75,6 +91,14 @@
             "Value": {
                 "id": "1e52155c-4413-411c-914f-c6f0c39690f0",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "31828437-3fa2-4d12-bf67-ed0461ffda37",
+            "Value": {
+                "id": "198cc832-37e6-404b-b312-dec44b8cf5b7",
+                "resourcePath": "objects\\oParJumpThru\\oParJumpThru.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -167,6 +191,14 @@
             }
         },
         {
+            "Key": "57d70f9b-40a9-4259-b849-8709f42fcc08",
+            "Value": {
+                "id": "f03e56c4-2174-4647-97a4-1ad8c59328f6",
+                "resourcePath": "objects\\oBlock\\oBlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "585d2fa8-45ab-46c2-905e-b4806cfa5f22",
             "Value": {
                 "id": "82f32e7a-86cd-4608-ac8a-2d5bf657fc74",
@@ -180,6 +212,14 @@
                 "id": "8d4eabad-ac7e-41d2-a69e-2cfaa6d84c38",
                 "resourcePath": "fonts\\fnt_debug\\fnt_debug.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "6f5cbb45-d2ec-480d-96c3-b8c73f4d5a75",
+            "Value": {
+                "id": "b3f21e00-29f9-400d-a706-65f2a93f120e",
+                "resourcePath": "scripts\\PlatformCheck\\PlatformCheck.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -279,6 +319,14 @@
             }
         },
         {
+            "Key": "a89d1d6c-6f57-4bf0-807a-65620536fe6c",
+            "Value": {
+                "id": "69ed0d24-2199-47e0-94cb-41830a9000c7",
+                "resourcePath": "objects\\obj_entity\\obj_entity.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "cb5189c6-273e-4190-b8e0-adcf155a9076",
@@ -323,6 +371,14 @@
             "Value": {
                 "id": "85846c45-1dd3-43aa-8f9d-17a986fabd03",
                 "resourcePath": "scripts\\player_move_state\\player_move_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c9490e8c-af39-4064-9e52-2e04f2116c05",
+            "Value": {
+                "id": "1f5b0f2d-ee1c-401a-830f-228074f5d355",
+                "resourcePath": "scripts\\OnGround\\OnGround.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -413,7 +469,10 @@
         "a7cc496d-2e6c-4de0-a753-4779eb19b188",
         "4c9b6681-5c40-46ec-abfe-f57096c35386",
         "7a3595a9-3f29-4d41-abdd-942c0e0afa22",
-        "c9064236-4f6a-4a17-a223-fac6c2f31c18"
+        "c9064236-4f6a-4a17-a223-fac6c2f31c18",
+        "c9490e8c-af39-4064-9e52-2e04f2116c05",
+        "02d158f1-7383-4b2e-8da9-21079ff14ee2",
+        "6f5cbb45-d2ec-480d-96c3-b8c73f4d5a75"
     ],
     "tutorial": ""
 }
