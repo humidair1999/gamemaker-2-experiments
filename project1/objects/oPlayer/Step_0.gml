@@ -4,19 +4,20 @@
 
 var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, kAction, kBlock, kRollL, kRollR, tempAccel, tempFric;
 
-kLeft        = keyboard_check(vk_left)  || gamepad_axis_value(0, gp_axislh) < -0.4;
-kRight       = keyboard_check(vk_right) || gamepad_axis_value(0, gp_axislh) >  0.4;
-kUp          = keyboard_check(vk_up)    || gamepad_axis_value(0, gp_axislv) < -0.4;
-kDown        = keyboard_check(vk_down)  || gamepad_axis_value(0, gp_axislv) >  0.4;
+kLeft        = keyboard_check(vk_left);
+kRight       = keyboard_check(vk_right);
+kUp          = keyboard_check(vk_up);
+kDown        = keyboard_check(vk_down);
 
-kJump        = keyboard_check_pressed(ord('Z'))  || gamepad_button_check_pressed(0, gp_face1);
-kJumpRelease = keyboard_check_released(ord('Z')) || gamepad_button_check_released(0, gp_face1);
+kJump        = keyboard_check_pressed(vk_space);
+kJumpRelease = keyboard_check_released(vk_space);
 
-kAction      = keyboard_check_pressed(ord('X'))  || gamepad_button_check_pressed(0, gp_face3);
-kBlock       = keyboard_check(ord('C'))          || gamepad_button_check(0, gp_face2);
-kRollL       = keyboard_check_pressed(ord('A'))  || gamepad_button_check_pressed(0, gp_shoulderlb);
-kRollR       = keyboard_check_pressed(ord('D'))  || gamepad_button_check_pressed(0, gp_shoulderrb);
+//kAction      = keyboard_check_pressed(ord('X'))  || gamepad_button_check_pressed(0, gp_face3);
+//kBlock       = keyboard_check(ord('C'))          || gamepad_button_check(0, gp_face2);
+//kRollL       = keyboard_check_pressed(ord('A'))  || gamepad_button_check_pressed(0, gp_shoulderlb);
+//kRollR       = keyboard_check_pressed(ord('D'))  || gamepad_button_check_pressed(0, gp_shoulderrb);
 
+/*
 if (instance_exists(oTouchCompatible)) {
     // Disable double-click (increases input accuracy)
     device_mouse_dbclick_enable(false);
@@ -41,6 +42,7 @@ if (instance_exists(oTouchCompatible)) {
     //draw_sprite(sJumpButton, 0, view_xview[0] + 640 - 64 - 16, view_yview[0] + 280);
     //draw_sprite(sAtkButton, 0, view_xview[0] + 640 - 64 - 96, view_yview[0] + 280); 
 }
+*/
 
 // Movement ///////////////////////////////////////////////////////////////////
 
@@ -159,7 +161,7 @@ if (!onGround)
     state = JUMP;
 // Run particles
 else if (random(100) > 85 && abs(vx) > 0.5)
-    instance_create(x, y + 8, oParticlePlayer);
+    //instance_create(x, y + 8, oParticlePlayer);
 
 // Swap facing during wall slide
 if (cRight && !onGround)
@@ -203,6 +205,7 @@ if (state == ROLL) {
 }
     
 // Action
+/*
 if (!kBlock && kAction) {
     if (!attacking) {
         // Attack out of roll
@@ -214,7 +217,8 @@ if (!kBlock && kAction) {
             alarm[1]  = 8; 
             attacking = true;       
         // Jab in place
-        } else /*if (onGround && !kRight && !kLeft)*/ {
+				// see source for proper inline comment here
+        } else (onGround && !kRight && !kLeft) {
             image_index  = 0;
             image_speed  = 0.33;
             sprite_index = sPlayerJab;
@@ -223,5 +227,8 @@ if (!kBlock && kAction) {
         }
     }
 }
+*/
 
+/*
 blocking = kBlock;
+*/

@@ -90,7 +90,7 @@
             "Key": "28ac4982-5dac-4ec3-b15a-5cae6e909fa6",
             "Value": {
                 "id": "1e52155c-4413-411c-914f-c6f0c39690f0",
-                "resourcePath": "objects\\obj_player\\obj_player.yy",
+                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -322,7 +322,7 @@
             "Key": "a89d1d6c-6f57-4bf0-807a-65620536fe6c",
             "Value": {
                 "id": "69ed0d24-2199-47e0-94cb-41830a9000c7",
-                "resourcePath": "objects\\obj_entity\\obj_entity.yy",
+                "resourcePath": "objects\\oParEntity\\oParEntity.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -388,6 +388,14 @@
                 "id": "e16ed759-ee1d-415e-81e1-f9682066b086",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d034c286-6281-49ae-801c-9a076fcb122a",
+            "Value": {
+                "id": "de4ddd70-0f7d-439a-b6bb-227fce75b74c",
+                "resourcePath": "scripts\\Approach\\Approach.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -472,7 +480,8 @@
         "c9064236-4f6a-4a17-a223-fac6c2f31c18",
         "c9490e8c-af39-4064-9e52-2e04f2116c05",
         "02d158f1-7383-4b2e-8da9-21079ff14ee2",
-        "6f5cbb45-d2ec-480d-96c3-b8c73f4d5a75"
+        "6f5cbb45-d2ec-480d-96c3-b8c73f4d5a75",
+        "d034c286-6281-49ae-801c-9a076fcb122a"
     ],
     "tutorial": ""
 }

@@ -23,9 +23,11 @@ if (!attacking) {
             // Mid jump   
             if (!(place_meeting(x, y + 2, oParSolid) && vy != 0) && vy >= -1.0 && vy <= 1.0) {  
                 if (blocking)
-                    sprite_index = sPlayerJumpMShield;
+                    //sprite_index = sPlayerJumpMShield;
+										sprite_index = spr_player_run;
                 else
-                    sprite_index = sPlayerJumpM;  
+                    //sprite_index = sPlayerJumpM;  
+										sprite_index = spr_player_run;
            } else { 
                 // Rise + fall
                 if (vy <= 0) {
@@ -37,7 +39,8 @@ if (!attacking) {
                     if (blocking)
                         sprite_index = sPlayerJumpDShield;
                     else
-                        sprite_index = sPlayerJumpD;
+                        //sprite_index = sPlayerJumpD;
+												sprite_index = spr_player_run;
                 }
             }
              
