@@ -13,11 +13,6 @@ if (vspd > 0) {
 		while (!place_meeting(x, y + sign(vspd), found_platform)) {
         y += sign(vspd);
     }
-		
-		//y = found_platform.bbox_top;
-		
-		play_bbox = bbox_bottom;
-		plat_bbox = found_platform.bbox_top;
 
 		vspd = 0;
 	}
