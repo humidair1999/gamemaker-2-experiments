@@ -4521,7 +4521,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -4558,7 +4558,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -4595,7 +4595,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -4632,7 +4632,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -4669,7 +4669,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -4706,7 +4706,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -4743,7 +4743,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
@@ -4780,7 +4780,7 @@
             "vspeed": 0,
             "vtiled": false,
             "x": 0,
-            "y": 0
+            "y": -100
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
