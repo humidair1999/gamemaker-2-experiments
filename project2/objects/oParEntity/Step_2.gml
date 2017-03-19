@@ -8,7 +8,11 @@ cy -= vyNew;
 
 EntityStep();
 
+var bbox_width = (bbox_right + 1) - bbox_left;
+//var bbox_height = (bbox_bottom + 1) - bbox_top;
+
+x = clamp(x, bbox_width, room_width - bbox_width);
+
 // Pit death
-if (bbox_right < 0 || bbox_left > room_width || bbox_top > room_height || bbox_bottom < 0)
+if (bbox_top > room_height)
     instance_destroy();
-    

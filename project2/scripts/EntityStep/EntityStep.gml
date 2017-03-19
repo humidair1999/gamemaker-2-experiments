@@ -24,6 +24,7 @@ if (platformTarget) {
 }
 
 repeat(abs(vx)) {
+		// slope logic???
     if (place_meeting(x + sign(vx), y, oParSolid) && !place_meeting(x + sign(vx), y - 1, oParSolid))
         y -= 1;
          
