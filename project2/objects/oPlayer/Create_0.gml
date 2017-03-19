@@ -7,14 +7,14 @@ facing = 1;
 
 // Movement ///////////////////////////////////////////////////////////////////
 
-groundAccel = 1.00;
-groundFric  = 2.00;
-airAccel    = 0.75;
-airFric     = 0.01;
-vxMax       = 5.50;
-vyMax       = 10.0;
-jumpHeight  = 12.00;
-gravNorm    = 0.50;
+groundAccel = 1.50;
+groundFric  = 1.75;
+airAccel    = 1.0;
+airFric     = 0.25;
+vxMax       = 6.0;
+vyMax       = 15.0;
+jumpHeight  = 15.0;
+gravNorm    = 1.0;
 //gravSlide   = 0.25; 
 
 //clingTime   = 2.0;

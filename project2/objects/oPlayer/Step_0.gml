@@ -73,7 +73,8 @@ if (kLeft && !kRight /* && !sticking */) {
     
     // Apply acceleration left
     if (vx > 0)
-        vx = Approach(vx, 0, tempFric);   
+        vx = Approach(vx, 0, tempFric);
+				
     vx = Approach(vx, -vxMax, tempAccel);
 // Right
 // right movement logic for while not sticking to wall
@@ -83,7 +84,8 @@ if (kLeft && !kRight /* && !sticking */) {
     
     // Apply acceleration right
     if (vx < 0)
-        vx = Approach(vx, 0, tempFric);   
+        vx = Approach(vx, 0, tempFric);
+				
     vx = Approach(vx, vxMax, tempAccel);
 }
 /*
@@ -141,8 +143,8 @@ if (kJump) {
         } else {
             vy = -jumpHeight;
             
-            yscale = 1.33;
-            xscale = 0.67;
+            //yscale = 1.33;
+            //xscale = 0.67;
         }
     }
 // Variable jumping
