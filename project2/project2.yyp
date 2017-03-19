@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0418f19b-a991-4a03-bc31-34d96b059d21",
+            "Value": {
+                "id": "9e23c22f-4145-40ff-816b-8129086e686d",
+                "resourcePath": "sprites\\sCrateSmall\\sCrateSmall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0b6f4d8b-a1a1-41af-bf17-8fe48a1d8315",
             "Value": {
                 "id": "f901b291-e5c0-4338-ba47-8e9d4866199f",
@@ -87,6 +95,14 @@
             }
         },
         {
+            "Key": "1d9b5cd2-bb4b-4569-a7f9-5acc2ad7ae66",
+            "Value": {
+                "id": "62d33da4-b956-4010-b97b-bb7e8e2077ab",
+                "resourcePath": "objects\\oParCrate\\oParCrate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "20f2e241-2b96-4b09-8b08-b43206adf22a",
             "Value": {
                 "id": "ce4f8b76-82fb-4506-84a8-2c16dedaa8c6",
@@ -124,6 +140,14 @@
                 "id": "2dc00fb5-3240-4063-845e-9955b3825c1b",
                 "resourcePath": "views\\523c0e7f-df2e-4064-9287-eb273ca03c59.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "534bfe35-8b50-4244-b162-8ea425e09164",
+            "Value": {
+                "id": "d6c1c00b-6704-4d0e-ad92-81305713436c",
+                "resourcePath": "objects\\oCrateSmall\\oCrateSmall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -324,6 +348,22 @@
                 "id": "c81a6586-6c1f-4f95-8270-6b7d757264c8",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d01694f4-0081-4c50-9b65-e642cce235a4",
+            "Value": {
+                "id": "f71c5a16-3878-4a16-8a35-79d94a3dd17e",
+                "resourcePath": "objects\\oCratePoof\\oCratePoof.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d040cadd-0d19-443d-a8db-ba896affb66d",
+            "Value": {
+                "id": "5cc950f2-81ed-4078-8b8c-1bfe9b14bed5",
+                "resourcePath": "sprites\\sCratePoof\\sCratePoof.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

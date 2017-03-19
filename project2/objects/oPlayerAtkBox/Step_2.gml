@@ -13,11 +13,9 @@ with (oParGrass) {
 }
 */
 
-/*
 with (oParCrate) {
     // Break crate
     if (!(bbox_left > other.bboxright || bbox_right < other.bboxleft || bbox_top > other.bboxbottom || bbox_bottom < other.bboxtop)) {
         instance_destroy();
     }
 }
-*/
