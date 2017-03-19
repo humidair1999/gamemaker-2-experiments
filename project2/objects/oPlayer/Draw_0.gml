@@ -1,10 +1,8 @@
 // Draw sprite depending on player state
 
-var isDebugging = false;
+var isDebugging = true;
 
-/*
 if (!attacking) {
-*/
     switch (state) {
         case IDLE:
             image_speed = 1;
@@ -79,9 +77,7 @@ if (!attacking) {
         break;
 				*/
     }
-/*
 }
-*/
 
 // Draw player
 if (onGround)
@@ -92,11 +88,17 @@ else
 if (isDebugging) {
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 
-	with(oBlock) {
+	with (oBlock) {
 	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 	}
 
-	with(oJumpThru) {
+	with (oJumpThru) {
 	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+	}
+	
+	with (oPlayerAtkBox) {
+		draw_set_color(c_red);
+		draw_rectangle(bboxleft, bboxtop, bboxright, bboxbottom, true);
+		draw_set_color(c_white);
 	}
 }

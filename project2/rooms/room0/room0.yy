@@ -200,7 +200,7 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Player",
+            "name": "PlayerLayer",
             "userdefined_depth": false,
             "visible": true,
             "instances": [
@@ -249,7 +249,7 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Platforms",
+            "name": "PlatformsLayer",
             "userdefined_depth": false,
             "visible": true,
             "instances": [
@@ -1714,7 +1714,7 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Ground",
+            "name": "GroundLayer",
             "userdefined_depth": false,
             "visible": true,
             "instances": [
@@ -4331,7 +4331,7 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Game",
+            "name": "GameLayer",
             "userdefined_depth": false,
             "visible": true,
             "instances": [
@@ -4380,7 +4380,7 @@
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
             "m_serialiseFrozen": false,
-            "name": "Background",
+            "name": "BackgroundLayer",
             "userdefined_depth": false,
             "visible": true,
             "animationFPS": 15,

@@ -37,7 +37,7 @@ facing = image_xscale; // Change xscale in editor to adjust initial facing
 
 ///////////////////////////////////////////////////////////////////////////////
 
-//attacking = false;
+attacking = false;
 //blocking  = false;
 
 //fallTime = 0;

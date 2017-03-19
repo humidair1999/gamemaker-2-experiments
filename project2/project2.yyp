@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "710f4674-fef7-4b5d-896c-82a0e0b2e366",
+            "Value": {
+                "id": "aaafc868-2658-48d8-b493-b64205f55275",
+                "resourcePath": "objects\\oPlayerAtkBox\\oPlayerAtkBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7489c636-da1a-43b0-9459-c991ae12925a",
             "Value": {
                 "id": "2d90c542-cbe4-4c26-90a2-0777c651a31b",
@@ -228,6 +236,14 @@
                 "id": "1877a6a0-4266-4e4a-8283-5b277cb5cc2d",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a95b2a11-56dc-40da-97c7-3f286baa300d",
+            "Value": {
+                "id": "67d089cc-ddef-4b1e-9965-eb0865b707e4",
+                "resourcePath": "sprites\\sPlayerJab\\sPlayerJab.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
