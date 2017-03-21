@@ -3,42 +3,15 @@
 //jumped = false;
 //landed = false;
 
-
-/*
-if (vy > 0) {
-	below_box = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vy, oParSolid, false, true);
-	
-	if ((below_box != noone)) {
-		while (!place_meeting(x, y + sign(vy), below_box)) {
-        y += sign(vy);
-    }
-
-		vy = 0;
-	}
-}
-
-y += vy * global.delta;
-*/
-
-
-
-
-
-
-
-
 if (vy < 1 && vy > -1)
     PlatformCheck();
 else
     repeat(abs(vy)) {
         if (!PlatformCheck())
-            y += sign(vy) * global.delta;
+            y += sign(vy);
         else
             break;
     }
-
-
-
 
 /*
 if (platformTarget) {
@@ -61,7 +34,7 @@ repeat(abs(vx)) {
         //y += 1;
         
     if (!place_meeting(x + sign(vx), y, oParSolid))
-        x += sign(vx) * global.delta;
+        x += sign(vx);
     else
         vx = 0;
 }

@@ -86,11 +86,7 @@ else
     draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);
 
 if (isDebugging) {
-  draw_text(200, 16, string(vy));
-  
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-  
-  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom + vy, true);
 
 	with (oBlock) {
 	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
