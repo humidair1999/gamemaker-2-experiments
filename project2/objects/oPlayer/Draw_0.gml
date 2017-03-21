@@ -88,6 +88,10 @@ else
 if (isDebugging) {
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 
+  with (oEnemy) {
+	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+	}
+
 	with (oBlock) {
 	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 	}
