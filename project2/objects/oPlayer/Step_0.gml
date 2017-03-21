@@ -136,7 +136,8 @@ if (kJump) {
     if (onGround) {
         // Fall thru platform
         if (kDown) {
-            if (place_meeting(x, y + 1, oParJumpThru))
+            if ((collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, oParJumpThru, false, true) &&
+		            !collision_line(bbox_left, bbox_bottom, bbox_right, bbox_bottom, oParJumpThru, false, true)))
                 ++y;
         } else {
             vy = -jumpHeight;

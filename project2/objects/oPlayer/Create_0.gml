@@ -42,3 +42,8 @@ attacking = false;
 
 //fallTime = 0;
 //fallMax  = 28;
+
+below_box = 0;
+
+
+
