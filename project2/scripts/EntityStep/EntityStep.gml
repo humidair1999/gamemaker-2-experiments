@@ -1,7 +1,7 @@
 /// EntityStep();
 
-//jumped = false;
-//landed = false;
+jumped = false;
+landed = false;
 
 if (vy < 1 && vy > -1)
     PlatformCheck();
