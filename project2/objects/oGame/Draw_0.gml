@@ -1,1 +1,1 @@
-draw_text(view_xview[0] + 16, view_yview[0] + 16, string("some text here?"));
+draw_text(view_xview[0] + 16, view_yview[0] + 16, string(global.delta));
