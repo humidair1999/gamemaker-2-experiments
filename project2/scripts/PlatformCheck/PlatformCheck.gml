@@ -1,19 +1,14 @@
 /// PlatformCheck();
 
-// detect collision with solid
 var collision = instance_place(x, y + sign(vy), oParSolid);
 
-// if there is a collision,
 if (collision) {
-		// and the user is standing still or falling,
     if (vy >= 0) {
-				// set a platform target
         platformTarget = collision;
     } else {
-				// the user has hit their head and should stop
+        // Platform above
         vy = 0;
     }
-		
     return true;
 }
 
@@ -34,20 +29,22 @@ if (instance_exists(platformTarget)) {
     platformTarget = 0;
     
 if (vy > 0) {
-  with (oParEntity) {
-    if (place_meeting(x, y - 1, other) && !place_meeting(x, y, other)) {
-        vy = 0;
+    with (oParEntity) {
+        {
+            if (place_meeting(x, y - 1, other) && !place_meeting(x, y, other)) {
+                vy = 0;
+            }
+        }
     }
-  }
-
-  with (oParJumpThru) {
-    if (place_meeting(x, y - 1, other) && !place_meeting(x, y, other)) {
-        // Land
-        vy = 0;
-        other.platformTarget = id;
-        return true;
+    
+    with (oParJumpThru) {
+        if (place_meeting(x, y - 1, other) && !place_meeting(x, y, other)) {
+            // Land
+            vy = 0;
+            other.platformTarget = id;
+            return true;
+        }
     }
-  }
 }
 
 platformTarget = 0;

@@ -1,1 +1,0 @@
-global.delta = 1;

@@ -13,7 +13,6 @@ else
             break;
     }
 
-/*
 if (platformTarget) {
     if (!onGround)
         landed = true;
@@ -23,15 +22,14 @@ if (platformTarget) {
     else
         with (platformTarget) other.vy = 0;
 }
-*/
 
 repeat(abs(vx)) {
 		// slope logic???
-    //if (place_meeting(x + sign(vx), y, oParSolid) && !place_meeting(x + sign(vx), y - 1, oParSolid))
-        //y -= 1;
+    if (place_meeting(x + sign(vx), y, oParSolid) && !place_meeting(x + sign(vx), y - 1, oParSolid))
+        y -= 1;
          
-    //if (place_meeting(x + sign(vx), y + 2, oParSolid) && !place_meeting(x + sign(vx), y + 1, oParSolid))
-        //y += 1;
+    if (place_meeting(x + sign(vx), y + 2, oParSolid) && !place_meeting(x + sign(vx), y + 1, oParSolid))
+        y += 1;
         
     if (!place_meeting(x + sign(vx), y, oParSolid))
         x += sign(vx);
