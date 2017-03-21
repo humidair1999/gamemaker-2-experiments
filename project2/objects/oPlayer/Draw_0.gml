@@ -1,6 +1,6 @@
 // Draw sprite depending on player state
 
-var isDebugging = false;
+var isDebugging = true;
 
 if (!attacking) {
     switch (state) {
