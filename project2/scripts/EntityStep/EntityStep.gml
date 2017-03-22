@@ -31,7 +31,20 @@ if(place_meeting(x, y + ysp, oParSolid)) {
     ysp     = 0
     speed_y = 0; //We still have to set the theoretical value to 0 here
 }
-else if (ysp > 0) {
+
+if (ysp > 0) {
+  with (oParJumpThru) {
+        if (place_meeting(x, y - ysp, other) && !place_meeting(x, y, other)) {
+            while(!place_meeting(x, y - 1, other)) {
+          other.y += 1;
+        }
+        ysp     = 0
+        other.speed_y = 0; //We still have to set the theoretical value to 0 here
+        }
+    }
+
+
+  /*
   platformTarget = instance_place(x, y + ysp, oParJumpThru);
   
   if (instance_exists(platformTarget) && !place_meeting(x, y, platformTarget)) {
@@ -43,6 +56,7 @@ else if (ysp > 0) {
         speed_y = 0; //We still have to set the theoretical value to 0 here
     //}
   }
+  */
   
   
   

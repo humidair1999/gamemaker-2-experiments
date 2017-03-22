@@ -36,7 +36,9 @@ if(kRight)
 
 speed_x += (spd_wanted - speed_x) * 0.1; //Smoothly accelerate / decelerate to the wanted speed.
 
-speed_y += grav; //Apply gravity
+if (!OnGround()) {
+  speed_y += grav; //Apply gravity
+}
 
 if(kJump && OnGround())
 {
