@@ -7,6 +7,7 @@ facing = 1;
 
 // Movement ///////////////////////////////////////////////////////////////////
 
+/*
 groundAccel = 1.50;
 groundFric  = 1.75;
 airAccel    = 1.0;
@@ -16,6 +17,19 @@ vyMax       = 15.0;
 jumpHeight  = 15.0;
 gravNorm    = 1.0;
 //gravSlide   = 0.25; 
+*/
+
+
+grav    = 0.2; //Gravity
+speed_x = 0;
+speed_y = 0;
+
+platformTarget = 0;
+
+
+
+
+
 
 //clingTime   = 2.0;
 

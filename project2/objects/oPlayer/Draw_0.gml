@@ -1,6 +1,6 @@
 // Draw sprite depending on player state
 
-var isDebugging = false;
+var isDebugging = true;
 
 if (!attacking) {
     switch (state) {
@@ -81,11 +81,19 @@ if (!attacking) {
 
 // Draw player
 if (onGround)
-    draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);    
+    draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);
 else
     draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);
 
 if (isDebugging) {
+  with (oJumpThru) {
+    image_blend = c_white;
+  }
+
+  with (platformTarget) {
+    image_blend = c_red;
+  }
+
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 
   with (oEnemy) {
