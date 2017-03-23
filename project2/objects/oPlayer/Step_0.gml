@@ -39,7 +39,7 @@ if (state != ROLL) {
 // left movement logic for while not sticking to wall
 if (kLeft && !kRight /* && !sticking */) {
     facing = -1;
-    state  = RUN;
+    state = RUN;
     
     // Apply acceleration left
     if (vx > 0)
@@ -50,7 +50,7 @@ if (kLeft && !kRight /* && !sticking */) {
 // right movement logic for while not sticking to wall
 } else if (kRight && !kLeft /* && !sticking */) {
     facing = 1;
-    state  = RUN;
+    state = RUN;
     
     // Apply acceleration right
     if (vx < 0)

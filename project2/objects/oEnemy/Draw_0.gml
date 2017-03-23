@@ -1,9 +1,14 @@
 switch (state) {
   case IDLE:
     image_speed = 1;
-            
     sprite_index = sPlayerIdle;
-  break;
+    
+    break;
+  case RUN: 
+    image_speed = 1; 
+    sprite_index = sPlayerRun;
+    
+    break;
 }
 
 draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, image_blend, 1);
