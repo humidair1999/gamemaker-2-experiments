@@ -1,1 +1,1 @@
-draw_text(view_xview[0] + 16, view_yview[0] + 16, string(fps));
+draw_text(32, 32, string(fps));
