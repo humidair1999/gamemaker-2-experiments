@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "db44c741-5236-40a4-a8ef-db349adcb99a",
+            "Value": {
+                "id": "aa9f05dd-8929-4662-948e-0ab700454f88",
+                "resourcePath": "objects\\oEnemyAtkBox\\oEnemyAtkBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "db7f9bae-8e12-493c-afc0-7218b9fb4ed9",
             "Value": {
                 "id": "3b430885-5a29-45d8-897f-4e410f00839d",

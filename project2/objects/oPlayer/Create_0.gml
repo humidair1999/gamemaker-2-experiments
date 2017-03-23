@@ -19,6 +19,10 @@ gravNorm    = 0.5;
 
 //clingTime   = 2.0;
 
+hp = 10;
+maxHp = 10;
+isInvincible = false;
+
 // Misc ///////////////////////////////////////////////////////////////////////
 
 // States

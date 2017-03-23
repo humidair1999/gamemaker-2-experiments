@@ -19,9 +19,12 @@ sight = 180;
 IDLE     = 10;
 RUN      = 11;
 CHASE    = 12;
+ATTACK   = 13;
 
 // Initialize properties
-state  = IDLE;
+state  = RUN;
 facing = image_xscale;
+
+attacking = false;
 
 isInvincible = false;

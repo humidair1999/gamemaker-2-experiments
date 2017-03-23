@@ -80,10 +80,20 @@ if (!attacking) {
 }
 
 // Draw player
+/*
 if (onGround)
     draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);    
 else
-    draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);
+*/
+
+draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, image_blend, image_alpha);
+    
+var pc = (hp / maxHp) * 100;
+var bboxwidth = bbox_right - bbox_left;
+
+draw_healthbar(bbox_left, bbox_top - 35, bbox_right, bbox_top - 31, pc, c_black, c_red, c_red, 0, false, false);
+
+//draw_text(bbox_left + (bboxwidth / 2), bbox_top - 75, string(pc));
 
 if (isDebugging) {
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
@@ -101,6 +111,12 @@ if (isDebugging) {
 	}
 	
 	with (oPlayerAtkBox) {
+		draw_set_color(c_red);
+		draw_rectangle(bboxleft, bboxtop, bboxright, bboxbottom, true);
+		draw_set_color(c_white);
+	}
+  
+  with (oEnemyAtkBox) {
 		draw_set_color(c_red);
 		draw_rectangle(bboxleft, bboxtop, bboxright, bboxbottom, true);
 		draw_set_color(c_white);

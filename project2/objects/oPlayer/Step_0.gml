@@ -202,7 +202,7 @@ if (sprite_index == sPlayerRollSlash) {
 }*/
     
 // Jab
-if (sprite_index == sPlayerJab && round(image_index) > 0) {
+if (sprite_index == sPlayerJab && round(image_index) == 2) {
     with (instance_create_layer(x, y, "PlayerLayer", oPlayerAtkBox)) {
         bboxleft  = min(other.x + (25 * other.facing), other.x + (50 * other.facing));
         bboxright = max(other.x + (25 * other.facing), other.x + (50 * other.facing));
