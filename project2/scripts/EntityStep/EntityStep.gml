@@ -1,38 +1,24 @@
 /// EntityStep();
 
-jumped = false;
-landed = false;
+var xsp = round(vx); //Turn the theoretical value into an integer for collision and movement
 
-if (vy < 1 && vy > -1)
-    PlatformCheck();
-else
-    repeat(abs(vy)) {
-        if (!PlatformCheck())
-            y += sign(vy);
-        else
-            break;
-    }
+if (place_meeting(x + xsp, y, oParSolid)) {
+  while (!place_meeting(x + sign(xsp), y, oParSolid)) {
+    x += sign(xsp);
+  }
 
-if (platformTarget) {
-    if (!onGround)
-        landed = true;
-    
-    if (landed)
-        with (platformTarget) other.vy = 0;
-    else
-        with (platformTarget) other.vy = 0;
+  vx = 0;
+  xsp = 0;
 }
 
-repeat(abs(vx)) {
-		// slope logic???
-    //if (place_meeting(x + sign(vx), y, oParSolid) && !place_meeting(x + sign(vx), y - 1, oParSolid))
-        //y -= 1;
-         
-    //if (place_meeting(x + sign(vx), y + 2, oParSolid) && !place_meeting(x + sign(vx), y + 1, oParSolid))
-        //y += 1;
-        
-    if (!place_meeting(x + sign(vx), y, oParSolid))
-        x += sign(vx);
-    else
-        vx = 0;
+x += xsp;
+
+var ysp = round(vy);
+
+if (PlatformCheck(ysp)) {
+  vy = 0;
+  ysp = 0;
+}
+else {
+  y += ysp;
 }

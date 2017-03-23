@@ -19,44 +19,16 @@ kAction      = keyboard_check_pressed(vk_control);
 
 // Apply the correct form of acceleration and friction
 if (onGround) {  
-    tempAccel = groundAccel;
-    tempFric  = groundFric;
+  tempAccel = groundAccel;
+  tempFric  = groundFric;
 } else {
-    tempAccel = airAccel;
-    tempFric  = airFric;
+  tempAccel = airAccel;
+  tempFric  = airFric;
 }
-
-// Reset wall cling
-/*
-if ((!cRight && !cLeft) || onGround) {
-    canStick = true;
-    sticking = false;
-}
-*/
-
-// Cling to wall
-/*
-if (((kRight && cLeft) || (kLeft && cRight)) && canStick && !onGround) {
-    alarm[0] = clingTime;
-    sticking = true; 
-    canStick = false;       
-}
-*/
 
 // Handle gravity
 if (!onGround) {
-		// wall slide logic while falling
-		/*
-    if ((cLeft || cRight) && vy >= 0) {
-        // Wall slide
-        vy = Approach(vy, vyMax, gravSlide);
-    } else {
-		*/
-        // Fall normally
-        vy = Approach(vy, vyMax, gravNorm);
-		/*
-    }
-		*/
+  vy = Approach(vy, vyMax, gravNorm);
 }
 
 // movement logic for while not rolling
@@ -100,36 +72,6 @@ if (!kRight && !kLeft) {
         state = IDLE;
 } 
        
-// Wall jump
-/*
-if (kJump && cLeft && !onGround) {
-    yscale = 1.33;
-    xscale = 0.67;
-            
-    if (kLeft) {
-        vy = -jumpHeight * 1.2;
-        vx =  jumpHeight * .66;
-    } else {
-        vy = -jumpHeight * 1.1;
-        vx =  vxMax; 
-    }  
-}
-*/
-
-/*
-if (kJump && cRight && !onGround) {
-    yscale = 1.33;
-    xscale = 0.67;
-    
-    if (kRight) {
-        vy = -jumpHeight * 1.2;
-        vx = -jumpHeight * .66;
-    } else {
-        vy = -jumpHeight * 1.1;
-        vx = -vxMax;
-    }  
-}
-*/
  
 // Jump 
 if (kJump) { 
@@ -161,13 +103,7 @@ else if (random(100) > 85 && abs(vx) > 0.5)
     instance_create(x, y + 8, oParticlePlayer);
 */
 
-// Swap facing during wall slide
-/*
-if (cRight && !onGround)
-    facing = -1;
-else if (cLeft && !onGround)
-    facing = 1;
-*/
+
 
 // Roll
 /*
