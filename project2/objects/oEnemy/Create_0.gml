@@ -28,3 +28,5 @@ facing = image_xscale;
 attacking = false;
 
 isInvincible = false;
+
+attackBox = noone;
