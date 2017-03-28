@@ -19,9 +19,14 @@ gravNorm    = 0.5;
 
 //clingTime   = 2.0;
 
-hp = 10;
-maxHp = 10;
+hp = 100;
+maxHp = 100;
+stamina = 100;
+maxStamina = 100;
 isInvincible = false;
+
+jumpStaminaCost = 10;
+attackStaminaCost = 20;
 
 // Misc ///////////////////////////////////////////////////////////////////////
 

@@ -63,7 +63,7 @@ if (kLeft && !kRight /* && !sticking */) {
 */
 
 // Friction
-if (!kRight && !kLeft) {
+if ((!kRight && !kLeft) || attacking) {
     vx = Approach(vx, 0, tempFric);
     
 		/*
@@ -81,11 +81,13 @@ if (kJump) {
             if ((collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, oParJumpThru, false, true) &&
 		            !collision_line(bbox_left, bbox_bottom, bbox_right, bbox_bottom, oParJumpThru, false, true)))
                 ++y;
-        } else {
-            vy = -jumpHeight;
+        } else if (stamina >= jumpStaminaCost) {
+          stamina -= jumpStaminaCost;
+        
+          vy = -jumpHeight;
             
-            //yscale = 1.33;
-            //xscale = 0.67;
+          //yscale = 1.33;
+          //xscale = 0.67;
         }
     }
 // Variable jumping
@@ -160,12 +162,14 @@ if (/* !kBlock && */ kAction) {
 				// see source file for proper comment
         }
 				*/
-				/* else */ if (onGround && !kRight && !kLeft) {
-            image_index  = 0;
-            image_speed  = 1;
-            sprite_index = sPlayerJab;
+				/* else */ if (onGround && stamina >= attackStaminaCost) {
+          stamina -= attackStaminaCost;
+        
+          image_index  = 0;
+          image_speed  = 1;
+          sprite_index = sPlayerJab;
             
-            attacking = true;
+          attacking = true;
         }
     }
 }

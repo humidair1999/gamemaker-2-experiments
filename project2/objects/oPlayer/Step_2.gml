@@ -14,7 +14,7 @@ with (oEnemyAtkBox) {
         if (!other.isInvincible) {
           other.image_blend = c_red;
           
-          other.hp -= 1;
+          other.hp -= 10;
           
           other.isInvincible = true;
           
@@ -25,4 +25,10 @@ with (oEnemyAtkBox) {
 
 if (hp <= 0) {
   instance_destroy();
+}
+
+if (stamina < maxStamina && alarm[7] <= 0) {
+  stamina += 10;
+  
+  alarm[7] = 100;
 }

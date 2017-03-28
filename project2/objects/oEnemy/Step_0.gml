@@ -1,5 +1,7 @@
 var dis = 0;
 var dir = 0;
+var isMeetingLeft = 0;
+var isMeetingRight = 0;
 
 
 
@@ -24,6 +26,8 @@ if (!onGround) {
 if (instance_exists(oPlayer)) {
   dis = point_distance(x, y, oPlayer.x, oPlayer.y);
   dir = point_direction(x, y, oPlayer.x, y);
+  isMeetingLeft = place_meeting(x - sight, y, oPlayer);
+  isMeetingRight = place_meeting(x + sight, y, oPlayer);
 }
 
 
@@ -46,8 +50,10 @@ switch (state) {
 
         vx = Approach(vx, -vxMax, tempAccel);
 
-        if !collision_point(bbox_left - 40, bbox_bottom + 1, oParSolid, false, true)
+        if (!collision_point(bbox_left - 40, bbox_bottom + 1, oParSolid, false, true) &&
+            !collision_point(bbox_left - 40, bbox_bottom + 1, oParJumpThru, false, true)) {
           facing = 1;
+        }
       }
       else {
         // Apply acceleration right
@@ -56,8 +62,10 @@ switch (state) {
 
         vx = Approach(vx, vxMax, tempAccel);
 
-        if !collision_point(bbox_right + 40, bbox_bottom + 1, oParSolid, false, true)
+        if (!collision_point(bbox_right + 40, bbox_bottom + 1, oParSolid, false, true) &&
+            !collision_point(bbox_right + 40, bbox_bottom + 1, oParJumpThru, false, true)) {
           facing = -1;
+        }
       }
 
       if (dis != 0 && dis < sight) {
@@ -67,15 +75,29 @@ switch (state) {
 
     break;
   case CHASE:
-    if (dir != 0 && dir > 0) {
+    var chanceToLeap = random(100);
+  
+    if (dir == 180) {
       facing = -1;
       
-      vx = Approach(vx, -vxMax, tempAccel);
+      if (chanceToLeap < 5 & onGround) {
+        vx = -10;
+        vy = -8;
+      }
+      else {
+        vx = Approach(vx, -vxMax, tempAccel);
+      }
     }
-    else {
+    else if (dir == 0) {
       facing = 1;
       
-      vx = Approach(vx, vxMax, tempAccel);
+      if (chanceToLeap < 5 & onGround) {
+        vx = 10;
+        vy = -8;
+      }
+      else {
+        vx = Approach(vx, vxMax, tempAccel);
+      }
     }
     
     if (dis != 0 && dis <= 60) {
