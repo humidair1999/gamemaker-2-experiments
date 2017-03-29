@@ -30,3 +30,8 @@ attacking = false;
 isInvincible = false;
 
 attackBox = noone;
+
+lungedDistance = 0;
+lungeStep = 8;
+lungeMax = 150;
+lunging = false;

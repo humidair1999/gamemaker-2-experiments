@@ -2,6 +2,11 @@ var dis = 0;
 var dir = 0;
 var isMeetingLeft = 0;
 var isMeetingRight = 0;
+var isInLineOfSight = noone;
+var disToPlayer = 0;
+
+
+
 
 
 
@@ -32,6 +37,94 @@ if (instance_exists(oPlayer)) {
   dir = point_direction(x, y, oPlayer.x, y);
   isMeetingLeft = place_meeting(x - dis, y, oPlayer);
   isMeetingRight = place_meeting(x + dis, y, oPlayer);
+  isInLineOfSight = collision_line(x - 200, y, x + 200, y, oPlayer, false, true)
+  disToPlayer = distance_to_object(oPlayer);
+}
+
+
+
+
+
+// if player is in line of sight, within set distance
+// lunge in direction of player, stopping at player's bounding box
+// then pause for a bit before trying again
+
+
+
+
+
+
+
+
+
+if (isInLineOfSight != noone || lunging) {
+  image_blend = c_aqua;
+  
+  if (!lunging) {
+    facing = sign(oPlayer.x - x);
+  }
+  
+  if (alarm[5] <= 0) {
+    //facing = sign(oPlayer.x - x);
+    
+    if (lungedDistance < lungeMax) {
+      if (facing == -1) {
+        lunging = true;
+        x -= lungeStep;
+        lungedDistance += lungeStep;
+      }
+      else {
+        lunging = true;
+        x += lungeStep;
+        lungedDistance += lungeStep;
+      }
+    }
+    else {
+      lungedDistance = 0;
+  
+      alarm[5] = 100;
+    }
+  }
+  
+    // player to left
+    //if (dir == 180) {
+      //vx = disToPlayer * -1;
+      
+      //vx = Approach(vx, -vxMax, tempAccel);
+      //vx = (disToPlayer / 60) * -1;
+      //vy = -4
+      
+      //vx = sign(oPlayer.x - x) * 10;
+      
+      //while (!place_meeting(x - 1, y, oPlayer)) {
+      /*
+      if (x != playerXPos) {
+        vx += sign(playerXPos - x);
+      }
+      else {
+        vx = 0;
+        
+        playerXPos = -1;
+        alarm[5] = 200;
+      }
+      */
+      //}
+
+      //vx = 0;
+      //xsp = 0;
+    //}
+    // player to right
+    //else if (dir == 0) {
+      //vx = disToPlayer;
+      
+      //vx = Approach(vx, vxMax, tempAccel);
+      //vx = (disToPlayer / 60);
+    //}
+}
+else {
+  image_blend = c_white;
+  
+  vx = Approach(vx, 0, tempFric);
 }
 
 
@@ -40,6 +133,7 @@ if (instance_exists(oPlayer)) {
 
 
 
+/*
 switch (state) {
   case IDLE:
     vx = 0;
@@ -139,7 +233,7 @@ switch (state) {
     
     break;
 }
-
+*/
 
 
 
