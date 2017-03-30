@@ -1,10 +1,10 @@
 // Draw sprite depending on player state
 
-var isDebugging = false;
+var isDebugging = true;
 
-if (!attacking) {
-    switch (state) {
-        case IDLE:
+
+    switch (sprite_state) {
+        case "idling":
             image_speed = 1;
             
 						/*
@@ -15,7 +15,7 @@ if (!attacking) {
                 sprite_index = sPlayerIdle;
         break;
         
-        case RUN: 
+        case "walking": 
             image_speed = 1; 
             
 						/*
@@ -26,7 +26,7 @@ if (!attacking) {
                 sprite_index = sPlayerRun;
         break;
         
-        case JUMP:
+        case "jumping":
 						/*
             // Mid jump   
             if (!(place_meeting(x, y + 2, oParSolid) && vy != 0) && vy >= -1.0 && vy <= 1.0) {  
@@ -37,7 +37,7 @@ if (!attacking) {
            } else {
 					 */
                 // Rise + fall
-                if (vy <= 0) {
+              
 										/*
                     if (blocking)
                         sprite_index = sPlayerJumpUShield;
@@ -47,16 +47,7 @@ if (!attacking) {
 												
 												image_speed = 0;
 												image_index = 3;
-                } else {
-										/*
-                    if (blocking)
-                        sprite_index = sPlayerJumpDShield;
-                    else
-										*/
-                        sprite_index = sPlayerRun;
-												image_speed = 0;
-												image_index = 6;
-                }
+              
 						/*
             }
 						*/
@@ -71,13 +62,29 @@ if (!attacking) {
 						*/
         break;
         
+        case "falling":
+          sprite_index = sPlayerRun;
+					image_speed = 0;
+					image_index = 6;
+        break;
+        
+        case "attacking":
+          /*
+          if (state_new) {
+            image_index = 0;
+          }
+          */
+          image_speed  = 1;
+          sprite_index = sPlayerJab;
+        break;
+        
 				/*
         case ROLL:
             // Don't do stuff here    
         break;
 				*/
     }
-}
+
 
 // Draw player
 /*

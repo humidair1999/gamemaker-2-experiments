@@ -1,5 +1,8 @@
-if (sprite_index == sPlayerJab)
-    attacking = false;
+if (sprite_index == sPlayerJab) {
+  attacking = false;
+  
+  state_switch("Idle");
+}
     
 /*
 if (sprite_index == sPlayerRoll) {
