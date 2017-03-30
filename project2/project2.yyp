@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "72c283ce-14da-4724-b28b-558f9d44479e",
+            "Value": {
+                "id": "8768b2f1-34ca-4b13-b6c7-6eb2e2b8dcca",
+                "resourcePath": "scripts\\player_state_walk\\player_state_walk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7489c636-da1a-43b0-9459-c991ae12925a",
             "Value": {
                 "id": "2d90c542-cbe4-4c26-90a2-0777c651a31b",
@@ -284,6 +292,14 @@
                 "id": "2a253223-dbcf-4083-8c00-71f6aa894e55",
                 "resourcePath": "sprites\\bgForest7\\bgForest7.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7a59ecb5-613d-457a-984a-3fb9d95dabd8",
+            "Value": {
+                "id": "dc7ff63c-a679-491a-86bc-339ac87daaf5",
+                "resourcePath": "scripts\\player_state_idle\\player_state_idle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -551,6 +567,22 @@
             }
         },
         {
+            "Key": "e848bc9f-209c-4259-b964-bf4c7b2ab0f5",
+            "Value": {
+                "id": "8898cd7f-27b7-42ce-895b-5f33aee0aa3c",
+                "resourcePath": "scripts\\player_state_old_move\\player_state_old_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e84b4d73-798e-474a-aadb-be59247fb8d9",
+            "Value": {
+                "id": "006d5cc5-4ca3-4c95-ba3c-d2add66386a1",
+                "resourcePath": "scripts\\player_state_air\\player_state_air.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "eb3c7e5f-104a-4b19-908f-9919b755bd75",
             "Value": {
                 "id": "c831f357-e57e-4900-87b7-c648f692206f",
@@ -604,6 +636,10 @@
         "bf7b8699-603d-451d-8433-2fec713fbcfe",
         "cc672987-f233-45f4-8758-671bb314ee95",
         "6b28b5ab-c9be-4dd8-9362-25d166e341f2",
+        "7a59ecb5-613d-457a-984a-3fb9d95dabd8",
+        "e848bc9f-209c-4259-b964-bf4c7b2ab0f5",
+        "e84b4d73-798e-474a-aadb-be59247fb8d9",
+        "72c283ce-14da-4724-b28b-558f9d44479e",
         "638a67be-ac25-4bef-b3e9-afe7009697ee",
         "2b00d932-5767-4fb0-8a7a-5c18d07e7302",
         "d630aa8a-8ef1-4252-a166-08c13d65bdad",

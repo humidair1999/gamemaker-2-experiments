@@ -51,3 +51,44 @@ attacking = false;
 
 //fallTime = 0;
 //fallMax  = 28;
+
+
+
+
+
+
+
+kLeft = false;
+kRight = false;
+kUp = false;
+kDown = false;
+kJump = false;
+kJumpRelease = false;
+kAction = false;
+/* kBlock, kRollL, kRollR, */
+
+tempAccel = 0;
+tempFric = 0;
+
+
+
+
+
+
+
+
+
+
+
+///Setup State Machine for Platform Boy
+state_machine_init();
+
+//Define States
+state_create("Idle", player_state_idle);
+state_create("Walk", player_state_walk);
+state_create("Air", player_state_air);
+//Set the default state
+state_init("Idle");
+
+
+

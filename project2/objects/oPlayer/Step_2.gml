@@ -32,3 +32,12 @@ if (stamina < maxStamina && alarm[7] <= 0) {
   
   alarm[7] = 100;
 }
+
+
+
+
+
+
+
+
+state_update();
