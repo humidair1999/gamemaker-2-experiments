@@ -15,13 +15,7 @@ kAction      = keyboard_check_pressed(vk_control);
 
 // Movement ///////////////////////////////////////////////////////////////////
 
-if (onGround) {  
-  tempAccel = groundAccel;
-  tempFric  = groundFric;
-} else {
-  tempAccel = airAccel;
-  tempFric  = airFric;
-}
+
 
 
 

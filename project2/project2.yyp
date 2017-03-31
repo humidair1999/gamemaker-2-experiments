@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1ab21dd0-1239-46c7-8d7e-7e131ebda45d",
+            "Value": {
+                "id": "e46d739d-d173-4ce1-bf1d-cd08634ff0c0",
+                "resourcePath": "scripts\\player_util_move_horizontal\\player_util_move_horizontal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1c36deeb-212b-46fe-add8-0ae0d2d2d0f2",
             "Value": {
                 "id": "5bff0419-da7f-4cff-b4f2-c9bdc18761a1",
@@ -108,6 +116,14 @@
                 "id": "ce4f8b76-82fb-4506-84a8-2c16dedaa8c6",
                 "resourcePath": "views\\20f2e241-2b96-4b09-8b08-b43206adf22a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2412326c-2f9a-410a-a6ef-4eb235920743",
+            "Value": {
+                "id": "c61df04a-0fe7-4e59-9b98-b5fabea255cf",
+                "resourcePath": "scripts\\player_util_attack\\player_util_attack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -391,6 +407,14 @@
             }
         },
         {
+            "Key": "a694536e-176f-4e6b-b57d-a92b96fd4ccc",
+            "Value": {
+                "id": "147b43ac-b166-4606-903c-68e6193248dc",
+                "resourcePath": "scripts\\player_util_jump\\player_util_jump.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a744dda5-0bee-4ff5-b22f-ccfd50425330",
             "Value": {
                 "id": "e5643df1-21f0-4b2c-9fa8-9525bbbf6f56",
@@ -649,6 +673,9 @@
         "e84b4d73-798e-474a-aadb-be59247fb8d9",
         "72c283ce-14da-4724-b28b-558f9d44479e",
         "a29c6d34-37b5-4e01-a2c0-08d235cffb23",
+        "2412326c-2f9a-410a-a6ef-4eb235920743",
+        "a694536e-176f-4e6b-b57d-a92b96fd4ccc",
+        "1ab21dd0-1239-46c7-8d7e-7e131ebda45d",
         "638a67be-ac25-4bef-b3e9-afe7009697ee",
         "2b00d932-5767-4fb0-8a7a-5c18d07e7302",
         "d630aa8a-8ef1-4252-a166-08c13d65bdad",
