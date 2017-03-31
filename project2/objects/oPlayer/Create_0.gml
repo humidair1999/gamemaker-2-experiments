@@ -65,6 +65,7 @@ kDown = false;
 kJump = false;
 kJumpRelease = false;
 kAction = false;
+kDodge = false;
 /* kBlock, kRollL, kRollR, */
 
 tempAccel = 0;
@@ -87,6 +88,7 @@ state_machine_init();
 state_create("Idle", player_state_idle);
 state_create("Walk", player_state_walk);
 state_create("Air", player_state_air);
+state_create("Dodge", player_state_dodge);
 state_create("Attack", player_state_attack);
 //Set the default state
 state_init("Idle");

@@ -35,3 +35,28 @@ lungedDistance = 0;
 lungeStep = 8;
 lungeMax = 150;
 lunging = false;
+
+
+
+
+
+
+
+
+
+///Setup State Machine for Platform Boy
+state_machine_init();
+
+//Define States
+state_create("Idle", enemy_state_idle);
+//state_create("Walk", player_state_walk);
+state_create("Air", enemy_state_air);
+//state_create("Dodge", player_state_dodge);
+//state_create("Attack", player_state_attack);
+//Set the default state
+state_init("Idle");
+
+
+
+
+sprite_state = "idling";

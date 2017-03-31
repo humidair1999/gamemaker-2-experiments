@@ -1,6 +1,6 @@
 // Draw sprite depending on player state
 
-var isDebugging = true;
+var isDebugging = false;
 
 
     switch (sprite_state) {
@@ -66,6 +66,18 @@ var isDebugging = true;
           sprite_index = sPlayerRun;
 					image_speed = 0;
 					image_index = 6;
+        break;
+        
+        case "dodgingBegin":
+          image_index = 3;
+          image_speed  = 0;
+          sprite_index = sPlayerJab;
+        break;
+        
+        case "dodgingEnd":
+          image_index = 4;
+          image_speed  = 0;
+          sprite_index = sPlayerJab;
         break;
         
         case "attacking":

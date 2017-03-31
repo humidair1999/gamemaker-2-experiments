@@ -11,6 +11,10 @@ if (kLeft || kRight /* && !sticking */) {
   state_switch("Walk");
 }
 
+if (kDodge) {
+  state_switch("Dodge");
+}
+
 player_util_attack();
 
 player_util_jump();

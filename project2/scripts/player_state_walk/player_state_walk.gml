@@ -13,6 +13,10 @@ if (vx == 0) {
   state_switch("Idle");
 }
 
+if (kDodge) {
+  state_switch("Dodge");
+}
+
 player_util_attack();
 
 player_util_jump();

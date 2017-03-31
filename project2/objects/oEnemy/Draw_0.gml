@@ -1,21 +1,20 @@
-if (!attacking) {
-  switch (state) {
-    case IDLE:
-      image_speed = 1;
-      sprite_index = sPlayerIdle;
-    
-      break;
-    case RUN:
-      image_speed = 1; 
-      sprite_index = sPlayerRun;
-    
-      break;
-    case CHASE:
-      image_speed = 1; 
-      sprite_index = sPlayerRun;
-    
-      break;
-  }
+switch (sprite_state) {
+        case "idling":
+            image_speed = 1;
+            
+						/*
+            if (blocking)
+                sprite_index = sPlayerIdleShield;
+            else
+						*/
+                sprite_index = sPlayerIdle;
+        break;
+        
+        case "falling":
+          sprite_index = sPlayerRun;
+					image_speed = 0;
+					image_index = 6;
+        break;
 }
 
 draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, image_blend, 1);
