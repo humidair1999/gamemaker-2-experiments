@@ -9,7 +9,7 @@
                 sprite_index = sPlayerIdleShield;
             else
 						*/
-                sprite_index = sPlayerIdle;
+                sprite_index = spr_player_idle;
         break;
         
         case "walking": 
@@ -20,7 +20,7 @@
                 sprite_index = sPlayerRunShield;
             else
 						*/
-                sprite_index = sPlayerRun;
+                sprite_index = spr_player_run;
         break;
         
         case "jumping":
@@ -40,7 +40,7 @@
                         sprite_index = sPlayerJumpUShield;
                     else
 										*/
-                        sprite_index = sPlayerRun;
+                        sprite_index = spr_player_run;
 												
 												image_speed = 0;
 												image_index = 3;
@@ -60,7 +60,7 @@
         break;
         
         case "falling":
-          sprite_index = sPlayerRun;
+          sprite_index = spr_player_run;
 					image_speed = 0;
 					image_index = 6;
         break;
@@ -68,13 +68,13 @@
         case "dodgingBegin":
           image_index = 3;
           image_speed  = 0;
-          sprite_index = sPlayerJab;
+          sprite_index = spr_player_jab;
         break;
         
         case "dodgingEnd":
           image_index = 4;
           image_speed  = 0;
-          sprite_index = sPlayerJab;
+          sprite_index = spr_player_jab;
         break;
         
         case "attacking":
@@ -84,7 +84,7 @@
           }
           */
           image_speed  = 1;
-          sprite_index = sPlayerJab;
+          sprite_index = spr_player_jab;
         break;
         
 				/*

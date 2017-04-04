@@ -27,7 +27,7 @@ if (sprite_index == sPlayerRollSlash) {
 }*/
     
 // Jab
-if (sprite_index == sPlayerJab && round(image_index) == 3) {
+if (sprite_index == spr_player_jab && round(image_index) == 3) {
   attackBox = instance_create_layer(x + (40 * facing), y, "PlayerLayer", oPlayerAtkBox);
   
   with (attackBox) {

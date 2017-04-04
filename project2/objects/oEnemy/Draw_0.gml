@@ -7,7 +7,7 @@ switch (sprite_state) {
                 sprite_index = sPlayerIdleShield;
             else
 						*/
-                sprite_index = sPlayerIdle;
+                sprite_index = spr_player_idle;
         break;
         
         case "walking": 
@@ -18,11 +18,11 @@ switch (sprite_state) {
                 sprite_index = sPlayerRunShield;
             else
 						*/
-                sprite_index = sPlayerRun;
+                sprite_index = spr_player_run;
         break;
         
         case "falling":
-          sprite_index = sPlayerRun;
+          sprite_index = spr_player_run;
 					image_speed = 0;
 					image_index = 6;
         break;
@@ -30,19 +30,19 @@ switch (sprite_state) {
         case "preLunge":
           image_index = 6;
           image_speed  = 0;
-          sprite_index = sPlayerJab;
+          sprite_index = spr_player_jab;
         break;
         
         case "lunge":
           image_index = 3;
           image_speed  = 0;
-          sprite_index = sPlayerJab;
+          sprite_index = spr_player_jab;
         break;
         
         case "lungeAttack":
           image_index = 5;
           image_speed  = 0;
-          sprite_index = sPlayerJab;
+          sprite_index = spr_player_jab;
         break;
 }
 

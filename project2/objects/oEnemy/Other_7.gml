@@ -1,4 +1,4 @@
-if (sprite_index == sPlayerJab) {
+if (sprite_index == spr_player_jab) {
   attacking = false;
   
   alarm[2] = 30;
