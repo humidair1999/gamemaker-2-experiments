@@ -14,7 +14,7 @@ if (state_new) {
 
 sprite_state = "falling";
 
-vy = Approach(vy, vyMax, gravNorm);
+vy = approach(vy, vyMax, gravNorm);
 
 
 

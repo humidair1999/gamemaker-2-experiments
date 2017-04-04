@@ -1,4 +1,4 @@
-EntityStep();
+entity_step();
 
 var bbox_width = (bbox_right + 1) - bbox_left;
 var bbox_height = (bbox_bottom + 1) - bbox_top;

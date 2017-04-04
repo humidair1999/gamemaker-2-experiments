@@ -1,7 +1,7 @@
 var isDebugging = true;
 
 if (isDebugging) {
-  with (oPlayer) {
+  with (obj_player) {
     draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
   }
 
@@ -13,15 +13,15 @@ if (isDebugging) {
     draw_set_color(c_white);
 	}
 
-	with (oBlock) {
+	with (obj_block) {
 	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 	}
 
-	with (oJumpThru) {
+	with (obj_jump_thru) {
 	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 	}
 	
-	with (oPlayerAtkBox) {
+	with (obj_player_atk_box) {
 		draw_set_color(c_yellow);
 		draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 		draw_set_color(c_white);

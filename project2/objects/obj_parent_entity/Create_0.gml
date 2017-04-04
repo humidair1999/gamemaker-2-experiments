@@ -2,4 +2,4 @@
 vx = 0;
 vy = 0;
 
-onGround = OnGround();
+onGround = on_ground();

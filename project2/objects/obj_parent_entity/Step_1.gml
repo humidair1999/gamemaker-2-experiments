@@ -1,1 +1,1 @@
-onGround = OnGround();
+onGround = on_ground();

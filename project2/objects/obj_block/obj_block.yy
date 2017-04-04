@@ -2,7 +2,7 @@
     "id": "3a1f57d4-e0d1-46fd-944a-a0d0faaaba01",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBlock",
+    "name": "obj_block",
     "eventList": [
         
     ],

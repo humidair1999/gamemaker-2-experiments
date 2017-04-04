@@ -11,7 +11,7 @@ if (state_new) {
   sprite_state = "preLunge";
   image_blend = c_yellow;
   // TODO: 0 makes the sprite literally disappear
-  facing = sign(oPlayer.x - x);
+  facing = sign(obj_player.x - x);
   alarm[2] = 60;
   
   with (attackBox)
@@ -28,7 +28,7 @@ if (alarm[2] <= 0) {
 
 
 
-if (!collision_line(x - 200, y, x + 200, y, oPlayer, false, true)) {
+if (!collision_line(x - 200, y, x + 200, y, obj_player, false, true)) {
   state_switch("Idle");
 }
 

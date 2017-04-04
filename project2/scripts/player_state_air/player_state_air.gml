@@ -13,7 +13,7 @@ else {
   sprite_state = "falling";
 }
 
-vy = Approach(vy, vyMax, gravNorm);
+vy = approach(vy, vyMax, gravNorm);
 
 // Variable jumping
 if (kJumpRelease) { 

@@ -1,6 +1,6 @@
 //draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, image_blend, image_alpha);
 
-with (oPlayer) {
+with (obj_player) {
   draw_healthbar(0, 0, 480, 20, hp, c_black, c_red, c_red, 0, false, false);
   draw_text(10, 0, string(hp));
   

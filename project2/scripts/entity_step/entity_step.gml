@@ -15,7 +15,7 @@ x += xsp;
 
 var ysp = round(vy);
 
-if (PlatformCheck(ysp)) {
+if (platform_check(ysp)) {
   vy = 0;
   ysp = 0;
 }

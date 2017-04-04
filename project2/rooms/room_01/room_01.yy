@@ -2,7 +2,7 @@
     "id": "cfa78f73-27f4-4f3d-a661-8a8bd877d0e4",
     "modelName": "GMRoom",
     "mvc": "1.0",
-    "name": "room0",
+    "name": "room_01",
     "IsDnD": false,
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,

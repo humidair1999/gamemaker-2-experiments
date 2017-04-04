@@ -33,20 +33,20 @@ isWallToLeft = place_meeting(x - 40, y, obj_parent_solid);
 if ((facing == 1) && isFloorToRight && !isWallToRight) {
   // Apply acceleration right
   if (vx < 0)
-      vx = Approach(vx, 0, tempFric);
+      vx = approach(vx, 0, tempFric);
       
   sprite_state = "walking";
 
-  vx = Approach(vx, vxMax, tempAccel);
+  vx = approach(vx, vxMax, tempAccel);
 }
 else if ((facing == -1) && isFloorToLeft && !isWallToLeft) {
   // Apply acceleration left
   if (vx > 0)
-      vx = Approach(vx, 0, tempFric);
+      vx = approach(vx, 0, tempFric);
       
   sprite_state = "walking";
 
-  vx = Approach(vx, -vxMax, tempAccel);
+  vx = approach(vx, -vxMax, tempAccel);
 }
 else {
   state_switch("Idle");
@@ -61,7 +61,7 @@ if (alarm[1] <= 0) {
 
 
 // switch to lunge
-if (collision_line(x - 200, y, x + 200, y, oPlayer, false, true)) {
+if (collision_line(x - 200, y, x + 200, y, obj_player, false, true)) {
   state_switch("Prelunge");
 }
 

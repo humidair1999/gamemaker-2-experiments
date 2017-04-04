@@ -6,9 +6,9 @@ if (kLeft && !kRight /* && !sticking */) {
     
     // Apply acceleration left
     if (vx > 0)
-        vx = Approach(vx, 0, tempFric);
+        vx = approach(vx, 0, tempFric);
 				
-    vx = Approach(vx, -vxMax, tempAccel);
+    vx = approach(vx, -vxMax, tempAccel);
 // Right
 // right movement logic for while not sticking to wall
 } else if (kRight && !kLeft /* && !sticking */) {
@@ -16,11 +16,11 @@ if (kLeft && !kRight /* && !sticking */) {
     
     // Apply acceleration right
     if (vx < 0)
-        vx = Approach(vx, 0, tempFric);
+        vx = approach(vx, 0, tempFric);
 				
-    vx = Approach(vx, vxMax, tempAccel);
+    vx = approach(vx, vxMax, tempAccel);
 }
 
 if ((!kRight && !kLeft)) {
-    vx = Approach(vx, 0, tempFric);
+    vx = approach(vx, 0, tempFric);
 }

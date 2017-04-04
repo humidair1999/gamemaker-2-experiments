@@ -2,7 +2,7 @@
     "id": "710f4674-fef7-4b5d-896c-82a0e0b2e366",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oPlayerAtkBox",
+    "name": "obj_player_atk_box",
     "eventList": [
         {
             "id": "1ca929ab-1d8f-4815-8d4c-64a69dbc4b9b",
