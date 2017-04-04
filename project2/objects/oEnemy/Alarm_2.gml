@@ -1,3 +1,5 @@
 /// @description Pause before resume moving
 
-state = RUN;
+// NEW - enemy pause before executing lunge
+
+//state = RUN;

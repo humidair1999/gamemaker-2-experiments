@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "1beaf2d2-f07a-4993-90d9-0699d1d919d0",
+            "Value": {
+                "id": "5a397b09-2f63-4ca8-8eba-8c9096051efa",
+                "resourcePath": "scripts\\enemy_state_lunge\\enemy_state_lunge.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1c36deeb-212b-46fe-add8-0ae0d2d2d0f2",
             "Value": {
                 "id": "5bff0419-da7f-4cff-b4f2-c9bdc18761a1",
@@ -292,6 +300,14 @@
                 "id": "f0200d7d-ef07-400f-b680-11e7fc935181",
                 "resourcePath": "objects\\oParSolid\\oParSolid.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6e0f9a64-a773-4958-82c8-93aebe5382ec",
+            "Value": {
+                "id": "ae8ce5a2-d253-494d-9398-5185ed24ec04",
+                "resourcePath": "scripts\\enemy_state_prelunge\\enemy_state_prelunge.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -729,6 +745,8 @@
         "810d5fbb-0211-46c9-8fd3-514bdf514249",
         "96c0b083-d077-419d-8f47-4657f428aed2",
         "d09b2196-7c33-4adb-94e8-d2ddd71a21ac",
+        "1beaf2d2-f07a-4993-90d9-0699d1d919d0",
+        "6e0f9a64-a773-4958-82c8-93aebe5382ec",
         "638a67be-ac25-4bef-b3e9-afe7009697ee",
         "2b00d932-5767-4fb0-8a7a-5c18d07e7302",
         "d630aa8a-8ef1-4252-a166-08c13d65bdad",

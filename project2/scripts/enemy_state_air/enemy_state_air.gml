@@ -2,6 +2,8 @@
 /// enemy_state_air();
 
 if (state_new) {
+  vx = 0;
+  vy = 0;
   //tempAccel = airAccel;
   //tempFric  = airFric;
 }

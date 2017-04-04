@@ -55,6 +55,14 @@ if (alarm[1] <= 0) {
 
 
 
+// switch to lunge
+if (collision_line(x - 200, y, x + 200, y, oPlayer, false, true)) {
+  state_switch("Prelunge");
+}
+
+
+
+
 
 if (!onGround) {
   state_switch("Air");

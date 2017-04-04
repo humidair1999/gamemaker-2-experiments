@@ -51,7 +51,8 @@ state_machine_init();
 state_create("Idle", enemy_state_idle);
 state_create("Wander", enemy_state_wander);
 state_create("Air", enemy_state_air);
-//state_create("Dodge", player_state_dodge);
+state_create("Prelunge", enemy_state_prelunge);
+state_create("Lunge", enemy_state_lunge);
 //state_create("Attack", player_state_attack);
 //Set the default state
 state_init("Idle");

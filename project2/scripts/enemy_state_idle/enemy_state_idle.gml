@@ -6,6 +6,7 @@ if (state_new) {
     vy = 0;
     sprite_state = "idling";
     alarm[0] = 40;
+    image_blend = c_white;
 }
 
 if (alarm[0] <= 0) {

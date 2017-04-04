@@ -1,0 +1,1 @@
+/// @description Enemy pause during lunge
