@@ -25,7 +25,7 @@ if (alarm[3] <= 0) {
   sprite_state = "lungeAttack";
   
   if (!instance_exists(attackBox)) {
-    attackBox = instance_create_layer(x + (40 * facing), y, "EnemiesLayer", oEnemyAtkBox);
+    attackBox = instance_create_layer(x + (40 * facing), y, "EnemiesLayer", obj_enemy_atk_box);
     
     with (attackBox) {
       image_xscale = 1;

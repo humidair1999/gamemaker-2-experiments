@@ -78,7 +78,3 @@ state_init("Idle");
 
 
 sprite_state = "idling";
-
-
-
-

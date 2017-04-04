@@ -5,8 +5,8 @@ if (kJump) {
     if (onGround) {
         // Fall thru platform
         if (kDown) {
-            if ((collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, oParJumpThru, false, true) &&
-		            !collision_line(bbox_left, bbox_bottom, bbox_right, bbox_bottom, oParJumpThru, false, true)))
+            if ((collision_line(bbox_left, bbox_bottom + 1, bbox_right, bbox_bottom + 1, obj_parent_jump_thru, false, true) &&
+		            !collision_line(bbox_left, bbox_bottom, bbox_right, bbox_bottom, obj_parent_jump_thru, false, true)))
                 ++y;
         } else if (stamina >= jumpStaminaCost) {
           stamina -= jumpStaminaCost;

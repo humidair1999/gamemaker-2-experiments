@@ -2,7 +2,7 @@
     "id": "db44c741-5236-40a4-a8ef-db349adcb99a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oEnemyAtkBox",
+    "name": "obj_enemy_atk_box",
     "eventList": [
         {
             "id": "63fd7e59-a249-44db-9311-2520a9577baf",

@@ -13,14 +13,14 @@ with (oParGrass) {
 }
 */
 
-with (oParCrate) {
+with (obj_parent_crate) {
     // Break crate
     if (place_meeting(x, y, other)) {
         instance_destroy();
     }
 }
 
-with (oEnemy) {
+with (obj_enemy) {
     // Damage enemy
     if (place_meeting(x, y, other)) {
         //instance_destroy();

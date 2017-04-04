@@ -5,7 +5,7 @@ if (isDebugging) {
     draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
   }
 
-  with (oEnemy) {
+  with (obj_enemy) {
 	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
     
     draw_set_color(c_aqua);
@@ -27,7 +27,7 @@ if (isDebugging) {
 		draw_set_color(c_white);
 	}
   
-  with (oEnemyAtkBox) {
+  with (obj_enemy_atk_box) {
 		draw_set_color(c_yellow);
 		draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 		draw_set_color(c_white);

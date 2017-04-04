@@ -18,13 +18,13 @@ if (state_new) {
   image_blend = c_green;
 }
 
-isFloorToRight = (collision_point(bbox_right + 40, bbox_bottom + 1, oParSolid, false, true) ||
-                  collision_point(bbox_right + 40, bbox_bottom + 1, oParJumpThru, false, true));
-isFloorToLeft = (collision_point(bbox_left - 40, bbox_bottom + 1, oParSolid, false, true) ||
-                 collision_point(bbox_left - 40, bbox_bottom + 1, oParJumpThru, false, true));
+isFloorToRight = (collision_point(bbox_right + 40, bbox_bottom + 1, obj_parent_solid, false, true) ||
+                  collision_point(bbox_right + 40, bbox_bottom + 1, obj_parent_jump_thru, false, true));
+isFloorToLeft = (collision_point(bbox_left - 40, bbox_bottom + 1, obj_parent_solid, false, true) ||
+                 collision_point(bbox_left - 40, bbox_bottom + 1, obj_parent_jump_thru, false, true));
 
-isWallToRight = place_meeting(x + 40, y, oParSolid);
-isWallToLeft = place_meeting(x - 40, y, oParSolid);
+isWallToRight = place_meeting(x + 40, y, obj_parent_solid);
+isWallToLeft = place_meeting(x - 40, y, obj_parent_solid);
 
 
 

@@ -1,6 +1,6 @@
 // putting the crate's origin at middle center allows us to spawn
 // the poof directly in the middle as well
-instance_create_layer(x, y, "CollectiblesLayer", oCratePoof);
+instance_create_layer(x, y, "CollectiblesLayer", obj_crate_poof);
 
 /*
 var coins = random_range(4, 8);

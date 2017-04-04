@@ -4,7 +4,7 @@
 
 event_inherited();
 
-with (oEnemyAtkBox) {
+with (obj_enemy_atk_box) {
     // Enemy damage player
     if (place_meeting(x, y, other)) {
         //instance_destroy();

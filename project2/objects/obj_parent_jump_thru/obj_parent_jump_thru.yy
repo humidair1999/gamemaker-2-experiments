@@ -1,8 +1,8 @@
 {
-    "id": "6cf45aa0-1168-4b78-a010-dbe1d2c60f0e",
+    "id": "8e50270f-6c89-4d7d-9ecb-c147988077ee",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oParSolid",
+    "name": "obj_parent_jump_thru",
     "eventList": [
         
     ],

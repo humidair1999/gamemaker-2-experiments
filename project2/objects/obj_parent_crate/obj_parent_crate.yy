@@ -2,7 +2,7 @@
     "id": "1d9b5cd2-bb4b-4569-a7f9-5acc2ad7ae66",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oParCrate",
+    "name": "obj_parent_crate",
     "eventList": [
         {
             "id": "1d185602-d2a8-4fc5-ae8c-e49ec2f84362",
