@@ -6,11 +6,12 @@ if (state_new) {
     vy = 0;
     image_index = 0;
     sprite_state = "attacking";
+    stamina -= attackStaminaCost;
 }
 
 /// Hitbox
 
-with (oPlayerAtkBox)
+with (attackBox)
     instance_destroy();
 
 // Dash out of roll
@@ -27,6 +28,14 @@ if (sprite_index == sPlayerRollSlash) {
     
 // Jab
 if (sprite_index == sPlayerJab && round(image_index) == 3) {
+  attackBox = instance_create_layer(x + (40 * facing), y, "PlayerLayer", oPlayerAtkBox);
+  
+  with (attackBox) {
+    image_xscale = 1;
+    image_yscale = 1;
+  }
+  
+    /*
     with (instance_create_layer(x, y, "PlayerLayer", oPlayerAtkBox)) {
         bboxleft  = min(other.x + (25 * other.facing), other.x + (50 * other.facing));
         bboxright = max(other.x + (25 * other.facing), other.x + (50 * other.facing));
@@ -34,4 +43,5 @@ if (sprite_index == sPlayerJab && round(image_index) == 3) {
         bboxtop    = other.y + 4;
         bboxbottom = other.y + 12; 
     }
+    */
 }

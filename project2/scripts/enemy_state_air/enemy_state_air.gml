@@ -6,6 +6,9 @@ if (state_new) {
   vy = 0;
   //tempAccel = airAccel;
   //tempFric  = airFric;
+  
+  with (attackBox)
+    instance_destroy();
 }
 
 

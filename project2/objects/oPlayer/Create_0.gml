@@ -25,8 +25,9 @@ stamina = 100;
 maxStamina = 100;
 isInvincible = false;
 
-jumpStaminaCost = 10;
-attackStaminaCost = 20;
+jumpStaminaCost = 6;
+dodgeStaminaCost = 6;
+attackStaminaCost = 10;
 
 // Misc ///////////////////////////////////////////////////////////////////////
 
@@ -43,6 +44,8 @@ facing = image_xscale; // Change xscale in editor to adjust initial facing
 // For squash + stretch
 //xscale = 1;
 //yscale = 1;
+
+attackBox = noone;
 
 ///////////////////////////////////////////////////////////////////////////////
 

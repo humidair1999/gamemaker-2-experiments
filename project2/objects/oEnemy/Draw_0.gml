@@ -55,8 +55,4 @@ var bboxwidth = bbox_right - bbox_left;
 
 draw_healthbar(bbox_left, bbox_top - 35, bbox_right, bbox_top - 31, pc, c_black, c_red, c_red, 0, false, false);
 
-draw_set_color(c_aqua);
-//draw_circle(x, y, 200, true);
-draw_line(x - 200, y, x + 200, y);
-
 //draw_text(bbox_left + (bboxwidth / 2), bbox_top - 75, string(pc));

@@ -4,6 +4,7 @@
 if (state_new) {
   dodge_distance = 30;
   sprite_state = "dodgingBegin";
+  stamina -= dodgeStaminaCost;
 }
 
 vx = dodge_distance * facing;

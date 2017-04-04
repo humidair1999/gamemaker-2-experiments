@@ -23,6 +23,20 @@ if (alarm[3] <= 0) {
   
   sprite_state = "lungeAttack";
   
+  if (!instance_exists(attackBox)) {
+    attackBox = instance_create_layer(x + (40 * facing), y, "EnemiesLayer", oEnemyAtkBox);
+    
+    with (attackBox) {
+      image_xscale = 1;
+      image_yscale = 1;
+    }
+  }
+  else {
+    with (attackBox) {
+      x = other.x + (40 * other.facing);
+    }
+  }
+  
   vx = lunge_distance * facing;
 
   lunge_distance = lunge_distance * 0.75;

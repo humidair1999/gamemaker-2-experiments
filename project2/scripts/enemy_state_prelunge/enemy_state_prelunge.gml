@@ -12,6 +12,9 @@ if (state_new) {
   image_blend = c_yellow;
   facing = sign(oPlayer.x - x);
   alarm[2] = 60;
+  
+  with (attackBox)
+    instance_destroy();
 }
 
 

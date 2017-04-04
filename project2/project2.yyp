@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "6083b364-a394-4f32-a8bf-a720eec8580c",
+            "Value": {
+                "id": "8431da97-aca1-42b8-b991-ec262413e8ba",
+                "resourcePath": "sprites\\sEnemyAtkBox\\sEnemyAtkBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "638a67be-ac25-4bef-b3e9-afe7009697ee",
             "Value": {
                 "id": "e062a309-d6ff-4d67-ace1-981b9ed66be4",
@@ -655,6 +663,14 @@
             }
         },
         {
+            "Key": "de1efafd-f4bd-4475-9019-dab06e909fd5",
+            "Value": {
+                "id": "ee7e41de-fd35-4715-a835-64d998deb790",
+                "resourcePath": "views\\de1efafd-f4bd-4475-9019-dab06e909fd5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e762c4cb-f0d5-4064-9ad1-8a48052a4f4e",
             "Value": {
                 "id": "0a29a85c-43eb-4816-9fd0-9ffb6b4e93cd",
@@ -700,6 +716,14 @@
                 "id": "39f811d3-f1ca-45f9-aadf-8ae45452c300",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4744091-9c8b-4692-8a03-e658a228bb13",
+            "Value": {
+                "id": "0fd29388-d5dd-436b-9844-dc906ec38337",
+                "resourcePath": "sprites\\sPlayerAtkBox\\sPlayerAtkBox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

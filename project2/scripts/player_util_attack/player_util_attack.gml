@@ -17,8 +17,6 @@ if (/* !kBlock && */ kAction) {
         }
 				*/
 				/* else */ if (onGround && stamina >= attackStaminaCost) {
-          stamina -= attackStaminaCost;
-            
           attacking = true;
           
           state_switch("Attack");

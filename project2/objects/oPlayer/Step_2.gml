@@ -8,10 +8,10 @@ event_inherited();
 
 with (oEnemyAtkBox) {
     // Enemy damage player
-    if (!(bboxleft > other.bbox_right || bboxright < other.bbox_left || bboxtop > other.bbox_bottom || bboxbottom < other.bbox_top)) {
+    if (place_meeting(x, y, other)) {
         //instance_destroy();
         
-        if (!other.isInvincible) {
+        if (other.state_name != "Dodge" && !other.isInvincible) {
           other.image_blend = c_red;
           
           other.hp -= 10;
@@ -28,9 +28,9 @@ if (hp <= 0) {
 }
 
 if (stamina < maxStamina && alarm[7] <= 0) {
-  stamina += 10;
+  stamina += 2;
   
-  alarm[7] = 100;
+  alarm[7] = 20;
 }
 
 

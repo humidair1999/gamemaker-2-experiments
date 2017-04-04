@@ -1,8 +1,5 @@
 // Draw sprite depending on player state
 
-var isDebugging = false;
-
-
     switch (sprite_state) {
         case "idling":
             image_speed = 1;
@@ -106,31 +103,3 @@ else
 */
 
 draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, image_blend, image_alpha);
-
-if (isDebugging) {
-	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-
-  with (oEnemy) {
-	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-	}
-
-	with (oBlock) {
-	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-	}
-
-	with (oJumpThru) {
-	  draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
-	}
-	
-	with (oPlayerAtkBox) {
-		draw_set_color(c_red);
-		draw_rectangle(bboxleft, bboxtop, bboxright, bboxbottom, true);
-		draw_set_color(c_white);
-	}
-  
-  with (oEnemyAtkBox) {
-		draw_set_color(c_red);
-		draw_rectangle(bboxleft, bboxtop, bboxright, bboxbottom, true);
-		draw_set_color(c_white);
-	}
-}
