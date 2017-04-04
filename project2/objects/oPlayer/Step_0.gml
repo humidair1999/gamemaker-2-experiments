@@ -10,8 +10,6 @@ kJumpRelease = keyboard_check_released(ord("C"));
 
 kAction      = keyboard_check_pressed(ord("X"));
 kDodge       = keyboard_check_pressed(ord("Z"));
-//kRollL       = keyboard_check_pressed(ord('A'))  || gamepad_button_check_pressed(0, gp_shoulderlb);
-//kRollR       = keyboard_check_pressed(ord('D'))  || gamepad_button_check_pressed(0, gp_shoulderrb);
 
 // Movement ///////////////////////////////////////////////////////////////////
 

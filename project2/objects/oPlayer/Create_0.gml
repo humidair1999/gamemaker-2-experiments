@@ -3,7 +3,6 @@
 // Inherit oParEntity variables
 event_inherited();
 
-facing = 1;
 
 // Movement ///////////////////////////////////////////////////////////////////
 
@@ -15,9 +14,7 @@ vxMax       = 3.0;
 vyMax       = 14.0;
 jumpHeight  = 10.0;
 gravNorm    = 0.5;
-//gravSlide   = 0.25; 
 
-//clingTime   = 2.0;
 
 hp = 100;
 maxHp = 100;
@@ -26,34 +23,18 @@ maxStamina = 100;
 isInvincible = false;
 
 jumpStaminaCost = 6;
-dodgeStaminaCost = 6;
+dodgeStaminaCost = 12;
 attackStaminaCost = 10;
 
-// Misc ///////////////////////////////////////////////////////////////////////
 
-// States
-IDLE     = 10;
-RUN      = 11;
-JUMP     = 12;
-//ROLL     = 13;
-
-// Initialize properties
-state  = IDLE;
 facing = image_xscale; // Change xscale in editor to adjust initial facing
 
-// For squash + stretch
-//xscale = 1;
-//yscale = 1;
 
 attackBox = noone;
 
 ///////////////////////////////////////////////////////////////////////////////
 
 attacking = false;
-//blocking  = false;
-
-//fallTime = 0;
-//fallMax  = 28;
 
 
 
@@ -69,12 +50,9 @@ kJump = false;
 kJumpRelease = false;
 kAction = false;
 kDodge = false;
-/* kBlock, kRollL, kRollR, */
 
 tempAccel = 0;
 tempFric = 0;
-
-
 
 
 

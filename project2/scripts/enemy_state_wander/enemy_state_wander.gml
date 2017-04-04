@@ -12,6 +12,7 @@ if (state_new) {
   tempFric  = groundFric;
   sprite_state = "idling";
   alarm[1] = 240;
+  // TODO: 0 makes the sprite literally disappear
   facing_random = random_range(-10, 10);
   facing = sign(facing_random);
   image_blend = c_green;

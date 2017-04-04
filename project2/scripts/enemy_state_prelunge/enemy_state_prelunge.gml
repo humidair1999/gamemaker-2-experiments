@@ -10,6 +10,7 @@ if (state_new) {
   //tempFric  = groundFric;
   sprite_state = "preLunge";
   image_blend = c_yellow;
+  // TODO: 0 makes the sprite literally disappear
   facing = sign(oPlayer.x - x);
   alarm[2] = 60;
   

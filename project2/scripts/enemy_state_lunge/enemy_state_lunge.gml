@@ -10,6 +10,7 @@ if (state_new) {
   //tempFric  = groundFric;
   sprite_state = "lunge";
   image_blend = c_orange;
+  // TODO: 0 makes the sprite literally disappear
   facing = sign(oPlayer.x - x);
   lunge_distance = 30;
   alarm[3] = 30;

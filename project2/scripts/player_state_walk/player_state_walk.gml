@@ -13,7 +13,7 @@ if (vx == 0) {
   state_switch("Idle");
 }
 
-if (kDodge) {
+if (kDodge && stamina >= dodgeStaminaCost) {
   state_switch("Dodge");
 }
 

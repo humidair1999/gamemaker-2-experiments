@@ -15,14 +15,9 @@ maxHp = 10;
 
 sight = 180;
 
-// States
-IDLE     = 10;
-RUN      = 11;
-CHASE    = 12;
-ATTACK   = 13;
 
 // Initialize properties
-state  = RUN;
+
 facing = image_xscale;
 
 attacking = false;

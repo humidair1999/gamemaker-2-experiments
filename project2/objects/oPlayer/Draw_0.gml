@@ -96,10 +96,5 @@
 
 
 // Draw player
-/*
-if (onGround)
-    draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, c_white, image_alpha);    
-else
-*/
 
 draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, image_blend, image_alpha);

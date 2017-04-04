@@ -11,7 +11,7 @@ if (kLeft || kRight /* && !sticking */) {
   state_switch("Walk");
 }
 
-if (kDodge) {
+if (kDodge && stamina >= dodgeStaminaCost) {
   state_switch("Dodge");
 }
 

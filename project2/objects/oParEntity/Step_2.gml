@@ -1,11 +1,3 @@
-// Handle sub-pixel movement
-cx += vx;
-cy += vy;
-vxNew = round(cx);
-vyNew = round(cy);
-cx -= vxNew;
-cy -= vyNew;
-
 EntityStep();
 
 var bbox_width = (bbox_right + 1) - bbox_left;
