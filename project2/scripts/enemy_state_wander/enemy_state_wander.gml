@@ -2,6 +2,8 @@
 /// enemy_state_wander();
 
 var facing_random;
+var isFloorToRight, isFloorToLeft;
+var isWallToRight, isWallToLeft;
 
 if (state_new) {
   vx = 0;
@@ -12,18 +14,22 @@ if (state_new) {
   alarm[1] = 240;
   facing_random = random_range(-10, 10);
   facing = sign(facing_random);
+  image_blend = c_green;
 }
 
+isFloorToRight = (collision_point(bbox_right + 40, bbox_bottom + 1, oParSolid, false, true) ||
+                  collision_point(bbox_right + 40, bbox_bottom + 1, oParJumpThru, false, true));
+isFloorToLeft = (collision_point(bbox_left - 40, bbox_bottom + 1, oParSolid, false, true) ||
+                 collision_point(bbox_left - 40, bbox_bottom + 1, oParJumpThru, false, true));
+
+isWallToRight = place_meeting(x + 40, y, oParSolid);
+isWallToLeft = place_meeting(x - 40, y, oParSolid);
 
 
 
 
 
-
-
-if ((facing == 1) &&
-    (collision_point(bbox_right + 40, bbox_bottom + 1, oParSolid, false, true) ||
-     collision_point(bbox_right + 40, bbox_bottom + 1, oParJumpThru, false, true))) {
+if ((facing == 1) && isFloorToRight && !isWallToRight) {
   // Apply acceleration right
   if (vx < 0)
       vx = Approach(vx, 0, tempFric);
@@ -32,9 +38,7 @@ if ((facing == 1) &&
 
   vx = Approach(vx, vxMax, tempAccel);
 }
-else if ((facing == -1) &&
-    (collision_point(bbox_left - 40, bbox_bottom + 1, oParSolid, false, true) ||
-     collision_point(bbox_left - 40, bbox_bottom + 1, oParJumpThru, false, true))) {
+else if ((facing == -1) && isFloorToLeft && !isWallToLeft) {
   // Apply acceleration left
   if (vx > 0)
       vx = Approach(vx, 0, tempFric);

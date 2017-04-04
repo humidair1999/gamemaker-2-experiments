@@ -414,8 +414,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_48FEB387",
-                    "x": 640,
-                    "y": 176,
+                    "x": 368,
+                    "y": 144,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -437,8 +437,8 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "depth": 100,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 16,
+            "grid_y": 16,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -463,7 +463,7 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_C52F2A8",
-                    "x": 256,
+                    "x": 160,
                     "y": 128,
                     "IsDnD": false,
                     "colour": {

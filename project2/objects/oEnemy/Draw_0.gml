@@ -26,6 +26,24 @@ switch (sprite_state) {
 					image_speed = 0;
 					image_index = 6;
         break;
+        
+        case "preLunge":
+          image_index = 6;
+          image_speed  = 0;
+          sprite_index = sPlayerJab;
+        break;
+        
+        case "lunge":
+          image_index = 3;
+          image_speed  = 0;
+          sprite_index = sPlayerJab;
+        break;
+        
+        case "lungeAttack":
+          image_index = 5;
+          image_speed  = 0;
+          sprite_index = sPlayerJab;
+        break;
 }
 
 draw_sprite_ext(sprite_index, image_index, x, y, facing, 1, 0, image_blend, 1);

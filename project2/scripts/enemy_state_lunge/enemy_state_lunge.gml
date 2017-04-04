@@ -8,11 +8,11 @@ if (state_new) {
   vy = 0;
   //tempAccel = groundAccel;
   //tempFric  = groundFric;
-  sprite_state = "idling";
+  sprite_state = "lunge";
   image_blend = c_orange;
   facing = sign(oPlayer.x - x);
   lunge_distance = 30;
-  alarm[3] = 60;
+  alarm[3] = 30;
 }
 
 
@@ -20,6 +20,8 @@ if (state_new) {
 
 if (alarm[3] <= 0) {
   //facing = sign(oPlayer.x - x);
+  
+  sprite_state = "lungeAttack";
   
   vx = lunge_distance * facing;
 

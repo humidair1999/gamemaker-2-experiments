@@ -8,10 +8,10 @@ if (state_new) {
   vy = 0;
   //tempAccel = groundAccel;
   //tempFric  = groundFric;
-  sprite_state = "idling";
-  image_blend = c_aqua;
+  sprite_state = "preLunge";
+  image_blend = c_yellow;
   facing = sign(oPlayer.x - x);
-  alarm[2] = 120;
+  alarm[2] = 60;
 }
 
 
