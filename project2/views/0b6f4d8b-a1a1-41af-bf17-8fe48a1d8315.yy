@@ -8,7 +8,7 @@
         "7489c636-da1a-43b0-9459-c991ae12925a"
     ],
     "filterType": "GMObject",
-    "folderName": "Terrain",
+    "folderName": "terrain",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
