@@ -10,6 +10,17 @@ switch (sprite_state) {
                 sprite_index = sPlayerIdle;
         break;
         
+        case "walking": 
+            image_speed = 1; 
+            
+						/*
+            if (blocking)
+                sprite_index = sPlayerRunShield;
+            else
+						*/
+                sprite_index = sPlayerRun;
+        break;
+        
         case "falling":
           sprite_index = sPlayerRun;
 					image_speed = 0;

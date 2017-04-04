@@ -1,5 +1,7 @@
 /// @description Damaged
 
-image_blend = c_white;
+// NEW: pause before idle
 
-isInvincible = false;
+//image_blend = c_white;
+
+//isInvincible = false;

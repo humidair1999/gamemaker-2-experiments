@@ -49,7 +49,7 @@ state_machine_init();
 
 //Define States
 state_create("Idle", enemy_state_idle);
-//state_create("Walk", player_state_walk);
+state_create("Wander", enemy_state_wander);
 state_create("Air", enemy_state_air);
 //state_create("Dodge", player_state_dodge);
 //state_create("Attack", player_state_attack);

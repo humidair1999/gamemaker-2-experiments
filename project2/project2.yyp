@@ -591,6 +591,14 @@
             }
         },
         {
+            "Key": "d09b2196-7c33-4adb-94e8-d2ddd71a21ac",
+            "Value": {
+                "id": "9359e0de-ac85-43f1-83a9-8ea97540ff96",
+                "resourcePath": "scripts\\enemy_state_wander\\enemy_state_wander.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d630aa8a-8ef1-4252-a166-08c13d65bdad",
             "Value": {
                 "id": "2855dc87-b7a1-40f3-89a7-e1ec74b74b73",
@@ -720,6 +728,7 @@
         "25595c9e-7072-4a9d-902b-0cf1f01d3857",
         "810d5fbb-0211-46c9-8fd3-514bdf514249",
         "96c0b083-d077-419d-8f47-4657f428aed2",
+        "d09b2196-7c33-4adb-94e8-d2ddd71a21ac",
         "638a67be-ac25-4bef-b3e9-afe7009697ee",
         "2b00d932-5767-4fb0-8a7a-5c18d07e7302",
         "d630aa8a-8ef1-4252-a166-08c13d65bdad",
